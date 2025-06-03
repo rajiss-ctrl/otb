@@ -1,0 +1,82 @@
+import Image from 'next/image'
+import React from 'react'
+
+const OurProjects = () => {
+  return (
+    <article className='flex justify-center items-center flex-col py-[84px] bg-[#000000]'>
+        <button className='primary-btn border-[1px] border-[rgba(3,16,247,1)] p-4 text-white lg:text-[26px] font-medium leading-[100%] rounded-[30px] mb-[60px]'>Our Projects</button>
+        <h2 className='text-white text-[30px] lg:text-[50px] leading-[100%] font-bold'>This Ain&#39;t Just <br/> Portfolio Sh*t</h2>
+        <p className='lg:text-[22px] leading-[100%] font-light text-[rgba(255,255,255,0.66)] px-4 lg:px-[38%] mt-4'>We Built Some Wild Projects — real work, real late nights, real results. Scroll through and see some of what we&#39;re on.</p>
+        <div className="mt-[69px] w-full text-white px-4 lg:px-[100px]">
+            <div className="w-full border-t-[1px] border-b-[1px] border-[rgba(38,38,38,1)]">
+                <div className="flex flex-col lg:flex-row justify-between">
+                    <p className='border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start text-[28px] font-light leading-[100%]'>A Finance Website</p>
+                    <p className='border-b-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start text-[28px] font-light leading-[100%]'>A Finance Website</p>
+                </div>
+                <div className="flex items-center flex-col lg:flex-row">
+                    <div className="lg:border-r-[1px] border-b-[1px] border-[rgba(38,38,38,1)] ">
+                        <div className='px-4 lg:px-[58px]'>
+                            <div className="">
+                                <Image src='/project_img.svg' width={1000} height={1000} alt="" className='hidden lg:block'/>
+                                <Image src='/project_img.svg' width={800} height={800} alt="" className='lg:hidden'/>
+                            </div>
+                            <div className="flex justify-between items-center my-[30px]">
+                                <h3 className='text-[24px] leading-[100%] font-medium'>Eagle AI Website</h3>
+                                <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/>
+                            </div>
+                            <p className='text-[rgba(152,152,154,1)] font-light leading-[100%] mb-[50px]'>We designed a clean, intuitive platform for Eagle AI — a smart finance tool that helps users make better money moves. From seamless dashboards to smooth data flows, we made sure every part of the experience felt effortless. The result? A product that looks sharp, works fast, and actually makes finance feel less like a headache.</p>
+                        </div>
+                    </div>
+                    <div className="border-b-[1px] border-[rgba(38,38,38,1)] ">
+                        <div className='px-4 lg:px-[58px]'>
+                            <div className="">
+                                <Image src='/project_img.svg' width={1000} height={1000} alt=""/>
+                            </div>
+                            <div className="flex justify-between items-center my-[30px]">
+                                <h3 className='text-[24px] leading-[100%] font-medium'>Eagle AI Website</h3>
+                                <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/>
+                            </div>
+                            <p className='text-[rgba(152,152,154,1)] font-light leading-[100%] mb-[50px]'>We designed a clean, intuitive platform for Eagle AI — a smart finance tool that helps users make better money moves. From seamless dashboards to smooth data flows, we made sure every part of the experience felt effortless. The result? A product that looks sharp, works fast, and actually makes finance feel less like a headache.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="w-full">
+                <div className="flex flex-col lg:flex-row justify-between">
+                    <p className='border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start text-[28px] font-light leading-[100%]'>A Finance Website</p>
+                    <p className='border-b-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start text-[28px] font-light leading-[100%]'>A Finance Website</p>
+                </div>
+                <div className="flex flex-col lg:flex-row items-center">
+                    <div className="lg:border-r-[1px] border-[rgba(38,38,38,1)] ">
+                        <div className='px-4 lg:px-[58px]'>
+                            <div className="">
+                                <Image src='/project_img.svg' width={1000} height={1000} alt="" className='hidden lg:block'/>
+                                <Image src='/project_img.svg' width={800} height={800} alt="" className='lg:hidden'/>
+                            </div>
+                            <div className="flex justify-between items-center my-[30px]">
+                                <h3 className='text-[24px] leading-[100%] font-medium'>Eagle AI Website</h3>
+                                <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/>
+                            </div>
+                            <p className='text-[rgba(152,152,154,1)] font-light leading-[100%] mb-[50px]'>We designed a clean, intuitive platform for Eagle AI — a smart finance tool that helps users make better money moves. From seamless dashboards to smooth data flows, we made sure every part of the experience felt effortless. The result? A product that looks sharp, works fast, and actually makes finance feel less like a headache.</p>
+                        </div>
+                    </div>
+                    <div className=" ">
+                        <div className='px-4 lg:px-[58px]'>
+                            <div className="">
+                                <Image src='/project_img.svg' width={1000} height={1000} alt=""/>
+                            </div>
+                            <div className="flex justify-between items-center my-[30px]">
+                                <h3 className='text-[24px] leading-[100%] font-medium'>Eagle AI Website</h3>
+                                <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/>
+                            </div>
+                            <p className='text-[rgba(152,152,154,1)] font-light leading-[100%] mb-[50px]'>We designed a clean, intuitive platform for Eagle AI — a smart finance tool that helps users make better money moves. From seamless dashboards to smooth data flows, we made sure every part of the experience felt effortless. The result? A product that looks sharp, works fast, and actually makes finance feel less like a headache.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+  )
+}
+
+export default OurProjects

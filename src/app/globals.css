@@ -7,24 +7,10 @@
   --body-bg:rgba(6, 6, 6, 1);
 }
 
-.bricolage-grotesque-uniquifier {
-  font-family: "Bricolage Grotesque", sans-serif;
-}
+
 .primary-btn {
   background: var(--button-bg-gradient);
   color: white;
-}
-/* body{
-  background: var(--body-bg);  
-} */
-/* globals.css */
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-bricolage), sans-serif;
-}
-
-p {
-  font-family: var(--font-inter), sans-serif;
 }
 
 
