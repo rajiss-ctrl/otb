@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+ :root {
+  --button-bg-gradient: linear-gradient(to right, rgba(3, 0, 131, 1), rgba(1, 0, 59, 1));
+  --body-bg:rgba(6, 6, 6, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.bricolage-grotesque-uniquifier {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.primary-btn {
+  background: var(--button-bg-gradient);
+  color: white;
+}
+/* body{
+  background: var(--body-bg);  
+} */
+/* globals.css */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bricolage), sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+p {
+  font-family: var(--font-inter), sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.light_blue_floating::after {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(-40.14deg);
+  width: 40px; 
+  height: 40px; 
+  background-image: url('/light_blue_decor.svg'); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none; 
 }
+.blue_floating::after {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(-328.14deg);
+  width: 40px; 
+  height: 40px; 
+  background-image: url('/blue_decor.svg'); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none; 
+}
+
+/* navbar background-color:rgb(255,255,255,0.06) */
+
+/* hero body rgba(0, 0, 0, 1) */
+/* other sections bg color  rgba(6, 6, 6, 1) */
+/* footer bg rgba(38, 38, 38, 1) */
+/* navbar btn <div className="w-full h-64" style={{ background: 'linear-gradient(to right, rgba(3, 0, 131, 1), rgba(1, 0, 59, 1))' }}> */
