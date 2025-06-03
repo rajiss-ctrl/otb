@@ -27,6 +27,22 @@ p {
   font-family: var(--font-inter), sans-serif;
 }
 
+
+@keyframes spinGlobe {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-globe {
+  animation: spinGlobe 20s linear infinite;
+  transform-origin: center;
+}
+
+
 .light_blue_floating::after {
   content: '';
   position: absolute;
@@ -42,6 +58,44 @@ p {
   background-repeat: no-repeat;
   pointer-events: none; 
 }
+
+@keyframes slowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.light_blue_floating {
+  
+  animation: slowBounce 3s ease-in-out infinite;
+}
+@keyframes shake {
+  0%, 100% { transform: translateY(-50%) rotate(-40deg); }
+  25% { transform: translateY(-50%) rotate(-41deg); }
+  50% { transform: translateY(-50%) rotate(-39deg); }
+  75% { transform: translateY(-50%) rotate(-40.5deg); }
+}
+
+.light_blue_floating::after {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url('/light_blue_decor.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+
+  animation: shake 1.5s ease-in-out infinite;
+}
+
+
 .blue_floating::after {
   content: '';
   position: absolute;
@@ -56,6 +110,110 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   pointer-events: none; 
+}
+
+@keyframes slowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.blue_floating {
+  
+  animation: slowBounce 3s ease-in-out infinite;
+}
+
+.green_floating::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  bottom: -2.3rem;
+  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(-328.14deg);
+  width: 40px; 
+  height: 40px; 
+  background-image: url('/green_decor.svg'); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none; 
+}
+
+@keyframes slowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.green_floating {
+  
+  animation: slowBounce 3s ease-in-out infinite;
+}
+
+
+.pink_floating::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  bottom: -1rem;
+  /* transform: translateY(-50%); */
+  transform: translateY(-50%) rotate(-380.14deg);
+  width: 40px; 
+  height: 40px; 
+  background-image: url('/pink_decor.svg'); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none; 
+}
+@keyframes slowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.pink_floating {
+  
+  animation: slowBounce 3s ease-in-out infinite;
+}
+
+.orange_floating::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  bottom: -1rem;
+  /* transform: translateY(-50%); */
+  transform: translateY(-50%) rotate(-380.14deg);
+  width: 40px; 
+  height: 40px; 
+  background-image: url('/orange_decor.svg'); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none; 
+}
+
+@keyframes slowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.orange_floating {
+
+  animation: slowBounce 3s ease-in-out infinite;
 }
 
 /* navbar background-color:rgb(255,255,255,0.06) */
