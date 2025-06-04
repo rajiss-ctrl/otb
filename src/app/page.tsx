@@ -1,3 +1,4 @@
+import CoreServices from "./components/CoreServices";
 import Hero from "./components/Hero";
 import OurProjects from "./components/OurProjects";
 
@@ -5,9 +6,10 @@ import OurProjects from "./components/OurProjects";
 
 export default function Home() {
   return (
-    <div className="bg-[rgba(6,6,6,1)]">
+    <div >
       <Hero/>
       <OurProjects/>
+      <CoreServices/>
     </div>
   );
 }

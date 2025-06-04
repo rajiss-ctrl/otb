@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${bricolage.variable}`}>
-      <body className="antialiased">
+      <body className="antialiased bg-[rgba(6,6,6,1)]">
         {children}
       </body>
     </html>
