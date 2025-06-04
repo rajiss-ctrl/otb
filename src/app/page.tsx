@@ -1,3 +1,4 @@
+import ContactUs from "./components/ContactUs";
 import CoreServices from "./components/CoreServices";
 import Faq from "./components/Faq";
 import Hero from "./components/Hero";
@@ -14,6 +15,7 @@ export default function Home() {
       <CoreServices/>
       <ValueProposition/>
       <Faq/>
+      <ContactUs/>
     </div>
   );
 }
