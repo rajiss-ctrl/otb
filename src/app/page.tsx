@@ -1,6 +1,7 @@
 import ContactUs from "./components/ContactUs";
 import CoreServices from "./components/CoreServices";
 import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import OurProjects from "./components/OurProjects";
 import ValueProposition from "./components/ValueProposition";
@@ -16,6 +17,7 @@ export default function Home() {
       <ValueProposition/>
       <Faq/>
       <ContactUs/>
+      <Footer/>
     </div>
   );
 }
