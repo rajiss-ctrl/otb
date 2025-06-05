@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const OurProjects = () => {
@@ -82,7 +83,7 @@ const OurProjects = () => {
                 </div>
             </div>
         </div>
-        <div className="primary-btn p-4 rounded-[30px] mt-[59px] text-[rgba(255,255,255,1)] text-[20px] font-light leading-[100%]">Explore more projects</div>
+        <Link href='/projects' className="primary-btn p-4 rounded-[30px] mt-[59px] text-[rgba(255,255,255,1)] text-[20px] font-light leading-[100%]">Explore more projects</Link>
     </article>
   )
 }
