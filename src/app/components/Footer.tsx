@@ -10,7 +10,7 @@ const Footer = () => {
                 <Image src='/otb_over_the_board_logo.svg' width={300} height={300} alt="otb" className='hidden lg:block'/>
                 <Image src='/otb_over_the_board_logo.svg' width={400} height={400} alt="otb" className='lg:hidden'/>
             </Link>
-            <div className="flex flex-col lg:flex-row items-center lg:gap-[96px]">
+            <div className="flex flex-col lg:flex-row items-center -mt-8 lg:-mt-0 lg:gap-[96px]">
             <ul className='flex flex-col gap-[30px] text-[18px] font-[400] leading-[100%]  lg:flex-row items-center'>
                 <li className='mb-[11.5px] lg:mb-0'><Link href={'/'}>Home</Link></li>
                 <li className='mb-[11.5px] lg:mb-0'><Link href={'/'}>Services</Link></li>
@@ -40,7 +40,7 @@ const Footer = () => {
             </ul>
             </div>
         </div>
-        <div className="flex flex-col lg items-center pt-[38px] pb-[111px] ">
+        <div className="flex flex-col lg items-center pt-[38px] pb-[50px] lg:pb-[111px] ">
             <div className="flex flex-col lg:flex-row gap-[30px] items-center">
                 <div className="flex items-center gap-[10px]  border-b pb-2 lg:pb-1 border-[#262626]">
                     <Image src='/email.svg' width={20} height={24} alt="otb"/>
@@ -54,7 +54,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-[10px] px-[5.9rem] lg:px-0 text-center lg:text-start border-b pb-2 lg:pb-1 border-[#262626]">
                     <Image src='/address.png' width={20} height={24} alt="otb" className='hidden lg:block'/>
-                    <Image src='/address.png' width={30} height={24} alt="otb" className='lg:hidden'/>
+                    <Image src='/address.png' width={40} height={40} alt="otb" className='lg:hidden'/>
                     <span className='text-[14px] font-[400] leading-[100%]'>2nd Floor College House, 17 King Edwards Road, Ruislip, London, HA4 7AE</span>
                 </div>
                 <p className='text-[14px] font-[400] mt-[40px] lg:mt-0 leading-[100%]'>© 2025 OTB. All rights reserved.</p>
