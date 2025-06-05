@@ -1,9 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Projects from '../components/Projects'
+import Image from 'next/image'
 
 const page = () => {
   return (
-    <section className='text-white px-4 lg:px-[100px]'>
+    <section className='text-white px-4 lg:px-[100px]'>        
+    <Image src='/blur_circle_bg.svg' width={2000} height={2000} alt='project' className='absolute  -top-[10rem] -left-72 z-10'/>
       <div className="mt-[33px]">
         <Navbar/> 
       </div>
@@ -25,6 +28,23 @@ const page = () => {
             Every project here shows what happens when strategy meets good design.
           </p>
         </div>
+      </div>
+
+      {/* projects */}
+      <div className="mb-[40px]">
+        <Projects/>
+      </div>
+      <div className="mb-[40px]">
+        <Projects/>
+      </div>
+      <div className="mb-[40px]">
+        <Projects/>
+      </div>
+      <div className="mb-[40px]">
+        <Projects/>
+      </div>
+      <div className="mb-[40px]">
+        <Projects/>
       </div>
     </section>
   )
