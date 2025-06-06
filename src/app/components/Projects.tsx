@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section className='relative'>
         <Image src='/blur_circle_bg.svg' width={1000} height={1000} alt='project' className='absolute  -top-52 left-0 z-10'/>
-        <div className='bg-[#262626] flex items-center rounded-[20px] relative '>
+        <div className='bg-[#262626] flex items-center rounded-[20px] pb-[40px] relative '>
 
             <div className="lg:py-[71px] lg:px-[100px] border-r border-[#666666]">
                 <Image src='/project_img.svg' width={2000} height={2000} alt='project' className=''/>
