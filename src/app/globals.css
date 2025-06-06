@@ -1,14 +1,23 @@
 @import "tailwindcss";
 
 
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-bricolage: 'Bricolage Grotesque', sans-serif;
+}
 
 /* Apply fonts */
 body {
   --custom-gradient: linear-gradient(to right, rgba(3, 0, 131, 1), rgba(1, 0, 59, 1));
   font-family: var(--font-inter), sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-bricolage), sans-serif;
+}
+
+p, span, li,a,Link {
+  font-family: var(--font-inter), sans-serif;
 }
 .primary-btn {
   background: var(--custom-gradient);
