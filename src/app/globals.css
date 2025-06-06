@@ -2,14 +2,16 @@
 
 
 
- :root {
-  --button-bg-gradient: linear-gradient(to right, rgba(3, 0, 131, 1), rgba(1, 0, 59, 1));
-  --body-bg:rgba(6, 6, 6, 1);
+/* Apply fonts */
+body {
+  --custom-gradient: linear-gradient(to right, rgba(3, 0, 131, 1), rgba(1, 0, 59, 1));
+  font-family: var(--font-inter), sans-serif;
 }
-
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bricolage), sans-serif;
+}
 .primary-btn {
-  background: var(--button-bg-gradient);
+  background: var(--custom-gradient);
   color: white;
 }
 

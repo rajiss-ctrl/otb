@@ -4,16 +4,18 @@ import React from 'react'
 
 const OurProjects = () => {
   return (
-    <article className='relative flex justify-center items-center flex-col py-[84px] bg-[#000000]'>
-        <button className='primary-btn border-[1px] border-[rgba(3,16,247,1)] p-4 text-white lg:text-[26px] font-medium leading-[100%] rounded-[30px] mb-[60px]'>Our Projects</button>
+    <article className='relative z-50 flex justify-center items-center flex-col py-[84px] bg-[#000000]'>
+        <Link href='/projects' className='relative z-[60] primary-btn border-[1px] border-[rgba(3,16,247,1)] p-4 text-white lg:text-[26px] font-medium leading-[100%] rounded-[30px] mb-[60px]'>
+            Our Projects
+        </Link>
         <h2 className='text-white text-[30px] lg:text-[50px] leading-[100%] font-bold'>This Ain&#39;t Just <br/> Portfolio Sh*t</h2>
         <p className='lg:text-[22px] leading-[100%] font-light text-[rgba(255,255,255,0.66)] px-[25%] lg:px-[38%] mt-4'>We Built Some Wild Projects — real work, real late nights, real results. Scroll through and see some of what we&#39;re on.</p>
         
-        <Image src='/cube.svg' width={80} height={80} alt="" className='lg:hidden absolute top-60 left-0 '/>
-        <Image src='/cube.svg' width={200} height={200} alt="" className='hidden lg:block absolute top-52 left-[60px]'/>
+        <Image src='/cube.svg' width={80} height={80} alt="" className='z-0 lg:hidden absolute top-60 left-0 '/>
+        <Image src='/cube.svg' width={200} height={200} alt="" className='z-0 hidden lg:block absolute top-52 left-[60px]'/>
       
-        <Image src='/tiles.svg' width={80} height={80} alt="" className='lg:hidden absolute top-60 right-0 '/>
-        <Image src='/tiles.svg' width={200} height={200} alt="" className='hidden lg:block absolute top-32 right-[60px]'/>
+        <Image src='/tiles.svg' width={80} height={80} alt="" className='z-0 lg:hidden absolute top-60 right-0 '/>
+        <Image src='/tiles.svg' width={200} height={200} alt="" className='z-0 hidden lg:block absolute top-32 right-[60px]'/>
       
         <div className="mt-[69px] w-full text-white px-4 lg:px-[100px]">
             <div className="w-full border-t-[1px] border-b-[1px] border-[rgba(38,38,38,1)]">
@@ -83,7 +85,7 @@ const OurProjects = () => {
                 </div>
             </div>
         </div>
-        <Link href='/projects' className="primary-btn p-4 rounded-[30px] mt-[59px] text-[rgba(255,255,255,1)] text-[20px] font-light leading-[100%]">Explore more projects</Link>
+        <Link href={'/projects'} className="relative z-50 primary-btn p-4 rounded-[30px] mt-[59px] text-[rgba(255,255,255,1)] text-[20px] font-light leading-[100%]">Explore more projects</Link>
     </article>
   )
 }
