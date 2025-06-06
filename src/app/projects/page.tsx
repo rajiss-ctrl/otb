@@ -17,7 +17,7 @@ const page = () => {
       <DesktopMenu />
     <section className='text-white '>        
     <Image src='/blur_circle_bg.svg' width={2000} height={2000} alt='project' className='absolute  -top-[10rem] -left-72 z-0'/>
-      <div className={`px-4 lg:px-[100px] mt-[50px] relative  z-30`}>
+      <div className={`px-4 lg:px-[100px] mt-6 lg:mt-[50px] relative  z-30`}>
         <Navbar/> 
       </div>
       <div className="px-4 lg:px-[100px]">
@@ -42,16 +42,16 @@ const page = () => {
         </div>
 
         {/* projects */}
-        <div className="mb-[40px]">
+        <div className="mb-[20px] lg:mb-[40px]">
           <Projects/>
         </div>
-        <div className="mb-[40px]">
+        <div className="mb-[20px] lg:mb-[40px]">
           <Projects/>
         </div>
-        <div className="mb-[40px]">
+        <div className="mb-[20px] lg:mb-[40px]">
           <Projects/>
         </div>
-        <div className="mb-[40px]">
+        <div className="mb-[20px] lg:mb-[40px]">
           <Projects/>
         </div>
         <div className="">

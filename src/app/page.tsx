@@ -7,21 +7,31 @@ import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import OurProjects from "./components/OurProjects"
 import ValueProposition from "./components/ValueProposition"
+import { useMenu } from "./context/MenuContext"
 
 
 export default function Home() {
-
+    const { open, setOpen } = useMenu()
+    
+    const handleLogoClick = () => {
+      // Close the menu if it's open
+      if (open) {
+        setOpen(false)
+      }
+    }
 
   return (
     <div className="relative">
-      <DesktopMenu />
-      <Hero />
-      <OurProjects />
-      <CoreServices />
-      <ValueProposition />
-      <Faq />
-      <ContactUs />
-      <Footer />
+        <DesktopMenu />
+      <div onClick={handleLogoClick}  className="">
+        <Hero />
+        <OurProjects />
+        <CoreServices />
+        <ValueProposition />
+        <Faq />
+        <ContactUs />
+        <Footer />
+      </div>
     </div>
   )
 }

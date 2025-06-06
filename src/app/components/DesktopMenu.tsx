@@ -42,17 +42,27 @@ const DesktopMenu = () => {
           variants={menuVariants}
         >
           {/* Background Image */}
-          <div className="absolute inset-0 -z-10 overflow-hidden">
+          <div className="hidden lg:block absolute inset-0 -z-10 overflow-hidden">
               <Image 
                   src="/desktop_menu_net.svg" 
+                  alt="Background pattern"
+                  fill
+                  className=" object-cover object-center"
+                  style={{ opacity: 0.5 }}
+              />
+          </div>
+          <div className="lg:hidden absolute inset-0 -z-10 overflow-hidden">
+              <Image 
+                  src="/mobile_menu_net.svg" 
                   alt="Background pattern"
                   fill
                   className="object-cover object-center"
                   style={{ opacity: 0.5 }}
               />
           </div>
-          
-          <Navbar />
+          <div className="mt-8">
+            <Navbar />
+          </div>
           <div className="flex flex-col lg:flex-row justify-start lg:justify-between w-full lg:flex-grow lg:items-end mt-[44px] lg:mt-0 pb-[53px] lg:pb-0 relative z-50">
               <ul className="">
                   <Link href='/' className='flex items-end gap-4 mb-[30px]'>

@@ -49,14 +49,14 @@ const Navbar = () => {
                   width={40} 
                   height={40} 
                   alt='menu' 
-                  className={`${!open ? 'block' : 'hidden'}`}
+                  className={`${!open ? 'block px-1' : 'hidden'}`}
                 />
                 <Image 
                   src='/hambuger_menu.svg' 
                   width={40} 
                   height={40} 
                   alt='menu' 
-                  className={`${!open ? 'block' : 'hidden'}`}
+                  className={`${!open ? 'block px-1' : 'hidden'}`}
                 />
                 <Image 
                   src='/menu_cancel.png' 
@@ -75,14 +75,14 @@ const Navbar = () => {
                   width={30} 
                   height={30} 
                   alt='menu' 
-                  className={`${!open ? 'block' : 'hidden'}`}
+                  className={`${!open ? 'block px-1' : 'hidden'}`}
                 />
                 <Image 
                   src='/hambuger_menu.svg' 
                   width={30} 
                   height={30} 
                   alt='menu' 
-                  className={`${!open ? 'block' : 'hidden'}`}
+                  className={`${!open ? 'block px-1' : 'hidden'}`}
                 />
                 <Image 
                   src='/menu_cancel.png' 
