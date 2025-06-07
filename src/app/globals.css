@@ -16,7 +16,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-bricolage), sans-serif;
 }
 
-p, span, li,a,Link {
+p, 
+span,
+li,
+button,
+a,
+Link,
+.light_blue_floating,
+.blue_floating,
+.green_floating,
+.orange_floating,
+.pink_floating {
   font-family: var(--font-inter), sans-serif;
 }
 .primary-btn {

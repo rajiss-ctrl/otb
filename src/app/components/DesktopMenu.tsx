@@ -67,25 +67,25 @@ const DesktopMenu = () => {
               <ul className="">
                   <Link href='/' className='flex items-end gap-4 mb-[30px]'>
                       <Image src='/01.svg' width={20} height={20} alt="phone"/>
-                      <li className='home-num text-2xl lg:text-[40px] font-[700] leading-[100%] '>Home</li>
+                      <li className='home-num text-2xl lg:text-[30px] font-[700] leading-[100%] '>Home</li>
                   </Link>
                   <Link href='/' className='flex items-end gap-4 mb-[30px]'>
                       <Image src='/02.svg' width={20} height={20} alt="phone"/>
-                      <li className='serv-num text-2xl lg:text-[40px] font-[700] leading-[100%]'>Services</li>
+                      <li className='serv-num text-2xl lg:text-[30px] font-[700] leading-[100%]'>Services</li>
                   </Link>
                   <Link  href='/projects' className='flex items-end gap-4 mb-[30px]'>
                       <Image src='/03.svg' width={20} height={20} alt="phone"/>
-                      <li onClick={handleLogoClick} className='pro-num text-2xl lg:text-[40px] font-[700] leading-[100%]'>Projects</li>
+                      <li onClick={handleLogoClick} className='pro-num text-2xl lg:text-[30px] font-[700] leading-[100%]'>Projects</li>
                   </Link>
               </ul>
               <ul className="">
                   <Link href='/' className='flex items-end gap-4 mb-[30px]'>
                       <Image src='/04.svg' width={20} height={20} alt="phone"/>
-                      <li onClick={handleLogoClick} className='home-num text-2xl lg:text-[40px] font-[700] leading-[100%]'>About</li>
+                      <li onClick={handleLogoClick} className='home-num text-2xl lg:text-[30px] font-[700] leading-[100%]'>About</li>
                   </Link>
                   <Link href='/' className='flex items-end gap-4 mb-[30px]'>
                       <Image src='/05.svg' width={20} height={20} alt="phone"/>
-                      <li className='serv-num text-2xl lg:text-[40px] font-[700] leading-[100%]'>Contact</li>
+                      <li className='serv-num text-2xl lg:text-[30px] font-[700] leading-[100%]'>Contact</li>
                   </Link>
               </ul>
               <div className='flex lg:hidden flex-col w-[247px] mb-[32px] gap-[20px] rounded-[12px] border border-[#262626] pl-[24px] pr-[4px] py-[14px]'>
