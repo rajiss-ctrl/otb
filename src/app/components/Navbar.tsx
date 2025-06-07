@@ -22,18 +22,18 @@ const Navbar = () => {
           onClick={handleLogoClick} // Add click handler here
         >
           <Image 
-            src='/otbPNG.png' 
-            width={140} 
-            height={140} 
+            src='/otb_logo.svg' 
+            width={100} 
+            height={100} 
             alt='OTB' 
             className='hidden shadow opacity-100 lg:block cursor-pointer z-50'
           />
           <Image 
             src='/otb_logo.svg' 
-            width={40} 
-            height={50} 
+            width={60} 
+            height={60} 
             alt='OTB' 
-            className='lg:hidden cursor-pointer z-50'
+            className='lg:hidden opacity-100 cursor-pointer z-50'
           />
         </Link>
         <div className="flex items-center gap-2 lg:gap-[33px]">
