@@ -9,20 +9,42 @@ const OurProjects = () => {
             Our Projects
         </Link>
         <div className="flex flex-col justify-start px-[25%] lg:px-[35%]">
-            <h2 className='font-bricolage text-white text-[30px] lg:text-[50px] leading-[100%] font-bold'>This Ain&#39;t Just <br/> Portfolio Sh*t</h2>
+            <h2 className='font-bricolage text-white text-[24px] lg:text-[50px] leading-[100%] font-bold'>This Ain&#39;t Just <br/> Portfolio Sh*t</h2>
             <p className='font-inter lg:text-[22px] leading-[100%] font-[400] text-[rgba(255,255,255,0.66)]  mt-4'>We Built Some Wild Projects — real work, real late nights, real results. Scroll through and see some of what we&#39;re on.</p>    
         </div>
-        <Image src='/cube.svg' width={80} height={80} alt="" className='z-0 lg:hidden absolute top-60 left-0 '/>
-        <Image src='/cube.svg' width={200} height={200} alt="" className='z-0 hidden lg:block absolute top-52 left-[60px]'/>
-      
-        <Image src='/tiles.svg' width={80} height={80} alt="" className='z-0 lg:hidden absolute top-60 right-0 '/>
-        <Image src='/tiles.svg' width={200} height={200} alt="" className='z-0 hidden lg:block absolute top-32 right-[60px]'/>
-      
+       <Image 
+            src='/cube.svg' 
+            width={80} 
+            height={80} 
+            alt="" 
+            className='z-0 lg:hidden absolute top-60 left-0 animate-[spin_8s_linear_infinite] hover:animate-[spin_2s_linear_infinite]'
+            />
+            <Image 
+            src='/cube.svg' 
+            width={200} 
+            height={200} 
+            alt="" 
+            className='z-0 hidden lg:block absolute top-52 left-[60px] animate-[spin_8s_linear_infinite] hover:animate-[spin_2s_linear_infinite]'
+            />
+      <Image 
+            src='/tiles.svg' 
+            width={80} 
+            height={80} 
+            alt="" 
+            className='z-0 lg:hidden absolute top-60 right-0 opacity-0 animate-[fadeInOut_6s_ease-in-out_infinite]'
+            />
+            <Image 
+            src='/tiles.svg' 
+            width={200} 
+            height={200} 
+            alt="" 
+            className='z-0 hidden lg:block absolute top-32 right-[60px] opacity-0 animate-[fadeInOut_6s_ease-in-out_infinite]'
+            />
         <div className="mt-[69px] w-full text-white px-4 lg:px-[100px]">
             <div className="w-full border-t-[1px] border-b-[1px] border-[rgba(38,38,38,1)]">
                 <div className="flex flex-col lg:flex-row justify-between">
-                    <p className='font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
-                    <p className='font-bricolage border-b-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                    <p className='font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                    <p className='font-bricolage border-b-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
                 </div>
                 <div className="flex items-center flex-col lg:flex-row">
                     <div className="lg:border-r-[1px] border-b-[1px] border-[rgba(38,38,38,1)] ">
@@ -54,8 +76,8 @@ const OurProjects = () => {
             </div>
             <div className="w-full">
                 <div className="flex flex-col lg:flex-row justify-between">
-                    <p className='font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
-                    <p className='font-bricolage border-b-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                    <p className='font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                    <p className='font-bricolage border-b-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center">
                     <div className="lg:border-r-[1px] border-[rgba(38,38,38,1)] ">

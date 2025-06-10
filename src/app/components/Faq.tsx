@@ -12,27 +12,29 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <section className="relative pt-24 lg:py-[100px] bg-[#61004B] rounded-t-[40px] lg:rounded-t-[100px] text-white px-4 lg:px-[250px]">
-      <Image src="/faq_flower.svg" width={80} height={80} alt="flower" className="absolute -left-1 lg:left-52 top-[25%] lg:top-[18%]" />
-      <Image src="/oval.svg" width={200} height={200} alt="oval otb" className="absolute hidden lg:block right-40 bottom-[15%]" />
-      <Image src="/oval.svg" width={150} height={150} alt="oval otb" className="absolute lg:hidden right-4 bottom-0" />
+    <section className="relative py-24 lg:py-[100px] bg-[#61004B] rounded-t-[40px] lg:rounded-t-[100px] text-white px-4 lg:px-[250px]">
+      <Image src="/faq_flower.svg" width={100} height={100} alt="flower" className="absolute hidden lg:block left-48 top-[20%]" />
+      <Image src="/faq_flower.svg" width={70} height={70} alt="flower" className="absolute lg:hidden -left-4  top-[18%]" />
+      <Image src="/oval.svg" width={200} height={200} alt="oval otb" className="absolute hidden lg:block right-40 bottom-[2%]" />
+      <Image src="/mobile_oval.svg" width={100} height={100} alt="oval otb" className="absolute lg:hidden -right-3 bottom-0" />
 
-      <h2 className="font-bricolage text-xl lg:text-[70px] text-center font-bold mb-16 lg:mb-10 leading-[100%]">
+      <h2 className="font-bricolage text-[24px] lg:text-[60px] text-center font-bold mb-8 lg:mb-20 leading-[100%]">
         Frequently Asked Questions
       </h2>
 
-      <div className="text-white pb-24">
+      <div className="text-white py-4 lg:py-16 bg-white/5 backdrop-blur-xl">
+      <div className="w-full h-[1px] border-b border-[#322130]"></div>
         {faqData.map((item, index) => (
-          <div key={index} className="border-b border-[rgba(119,128,139,0.9)] pb-4 bg-white/5 backdrop-blur-md overflow-hidden">
+          <div key={index} className="border-b border-[#322130] pb-4 overflow-hidden">
             <button
               className="flex justify-between items-center w-full text-left p-4 lg:py-8 lg:px-[40px] cursor-pointer"
               onClick={() => toggleFaq(index)}
             >
-              <div className="flex items-center gap-[22px]">
-                <div className="w-[30px] h-[30px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)]">
-                  {item.num}
+              <div className="flex items-center gap-4 lg:gap-6">
+                <div className="min-w-[40px] lg:min-w-[60px] w-[40px] lg:w-[60px] h-[40px] lg:h-[60px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)]">
+                  <span className="text-[16px] lg:text-[24px] font-bold">{item.num}</span>
                 </div>
-                <h3 className="font-bricolage text-[12px] lg:text-[28px] leading-[100%] font-semibold">{item.question}</h3>
+                <h3 className="font-bricolage text-[12px] lg:text-[28px] leading-[100%] font-semibold text-left">{item.question}</h3>
               </div>
               <span className="text-2xl font-bold">
                 {openIndex === index ? (
@@ -52,9 +54,14 @@ const Faq: React.FC = () => {
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                 >
-                  <p className="font-inter text-[#E6E6E6CC] text-[12px] lg:text-[18px] font-[400] leading-[150%] lg:leading-[100%] mt-2 pl-16 lg:px-[90px] pb-4">
-                    {item.answer}
-                  </p>
+                  <div className="flex gap-4 lg:gap-6">
+                    <div className="min-w-[40px] lg:min-w-[60px] flex justify-center">
+                      <span className="invisible text-[16px] lg:text-[24px] font-bold">{item.num}</span>
+                    </div>
+                    <p className="font-inter text-[#E6E6E6CC] text-[14px] lg:text-[18px] font-[400] leading-[150%] lg:leading-[100%] mt-2 px-4 lg:px-10 pb-4">
+                      {item.answer}
+                    </p>
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>

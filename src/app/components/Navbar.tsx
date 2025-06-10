@@ -91,8 +91,8 @@ const Navbar = () => {
         />
       </Link>
 
-      <div className="flex items-center gap-2 lg:gap-[33px]">
-        <button className="primary-btn cursor-pointer border-[1px] border-[rgba(3,16,247,1)] text-[14px] lg:text-[18px] font-[500] leading-[100%] text-center rounded-[20px] lg:rounded-[40px] lg:h-[50px] py-3 px-4 lg:w-[166px]">
+      <div className="flex items-center gap-4 lg:gap-[33px]">
+        <button className="primary-btn cursor-pointer border-[1px] border-[rgba(3,16,247,1)] target_text text-[14px] lg:text-[18px] font-[500] leading-[100%] text-center rounded-[20px] lg:rounded-[40px] lg:h-[50px] py-3 px-4 lg:w-[166px]">
           Get in touch
         </button>
 

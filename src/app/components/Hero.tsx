@@ -9,17 +9,17 @@ import Image from 'next/image'
   
   return (
     <header className=' relative z-0 overflow-hidden bg-black h-[533px] lg:h-[750px] px-4 py-6 lg:px-[100px] lg:py-[33px]'>
-        {/* <Image src='/pattern 1.svg' fill  alt='background' className='absolute z-50 inzet-10 object-contain'/> */}
+        <Image src='/pattern 2.svg' fill  alt='background' className='absolute z-50 inzet-0 object-cover'/>
         
-       <div className="absolute w-full inset-0 z-40 pointer-events-none flex justify-center items-center">
+       {/* <div className="absolute w-full inset-0 z-40 pointer-events-none flex justify-center items-center">
   <Image
     src="/pattern 2.svg"
-    width={1350} // Or whatever fixed width keeps it sharp
+    width={1350} 
     height={750}
     alt="Pattern Background"
     className="object-contain mix-blend-luminosity opacity-100"
   />
-</div>
+</div> */}
 
 
 
@@ -29,14 +29,14 @@ import Image from 'next/image'
           <Navbar/>
         </div>
         <div className="relative text-[rgba(255,255,255,1)] z-50 mt-[120px] lg:mt-[18%] lg:w-[900px]">
-          <div className="light_blue_floating absolute w-[80px] lg:w-[110px] h-[20px] lg:h-[30px] bg-[rgba(71,111,255,1)] rotate-[10.14deg] -left-3 -top-8 text-[5px] lg:text-[10px] pt-1 lg:pt-[6px] text-center pl-1 rounded-[20px]">Web Development</div>
-          <div className="blue_floating absolute w-[60px] lg:w-[100px] h-[20px] lg:h-[30px] bg-[rgba(2,7,247,1)] rotate-[-17.14deg] -left-3 -bottom-16 text-[5px] lg:text-[10px] pt-1 lg:pt-[6px] text-center pl-2 rounded-[20px]">UI/UX Design</div>
-          <div className="green_floating absolute w-[60px] lg:w-[100px] h-[20px] lg:h-[30px] bg-[rgba(4,147,21,1)] rotate-[-17.14deg] right-4 lg:right-[28rem] -top-8 text-[5px] lg:text-[10px] pt-1 lg:pt-[6px] text-center pl-2 rounded-[20px]">Video Editing</div>
-          <div className="pink_floating absolute w-[60px] lg:w-[100px] h-[20px] lg:h-[30px] bg-[rgba(255,20,203,1)] right-6 lg:right-60 -bottom-[20%] lg:bottom-[54.6667%] text-[5px] lg:text-[10px] pt-1 lg:pt-[6px] text-center pl-2 rounded-[20px]">Graphic Design</div>
-          <div className="orange_floating absolute w-[80px] lg:w-[140px] h-[20px] lg:h-[30px] bg-[rgba(244,79,1,1)] rotate-[-17.14deg] right-6 lg:-right-32 bottom-[55%] lg:bottom-[25%] text-[5px] lg:text-[10px] pt-1 lg:pt-[6px] text-center pl-2 rounded-[20px]">Software Development</div>
+          <div className="light_blue_floating absolute w-[80px] lg:w-[120px] h-[20px] lg:h-[30px] bg-[rgba(71,111,255,1)] rotate-[10.14deg] -left-3 -top-8 text-[7px] lg:text-[12px] pt-1 lg:pt-[6px] text-center pl-1 rounded-[20px]">Web Development</div>
+          <div className="blue_floating absolute w-[68px] lg:w-[100px] h-[20px] lg:h-[30px] bg-[rgba(2,7,247,1)] rotate-[-17.14deg] -left-3 -bottom-16 text-[7px] lg:text-[12px] pt-1 lg:pt-[6px] text-center pl-2 rounded-[20px]">UI/UX Design</div>
+          <div className="green_floating absolute w-[70px] lg:w-[100px] h-[20px] lg:h-[30px] bg-[rgba(4,147,21,1)] rotate-[-17.14deg] right-4 lg:right-[28rem] -top-8 text-[7px] lg:text-[12px] pt-1 lg:pt-[6px] text-center pl-2 rounded-[20px]">Video Editing</div>
+          <div className="pink_floating absolute w-[80px] lg:w-[110px] h-[20px] lg:h-[30px] bg-[rgba(255,20,203,1)] right-6 lg:right-52 -bottom-[20%] lg:bottom-[54.6667%] text-[7px] lg:text-[12px] pt-1 lg:pt-[6px] text-center pl-2 rounded-[20px]">Graphic Design</div>
+          <div className="orange_floating absolute w-[100px] lg:w-[150px] h-[20px] lg:h-[30px] bg-[rgba(244,79,1,1)] rotate-[-17.14deg] right-6 lg:-right-32 bottom-[55%] lg:bottom-[25%] text-[7px] lg:text-[12px] pt-1 lg:pt-[6px] text-center pl-2 rounded-[20px]">Software Development</div>
           
           <h1 className='font-bricolage text-[40px] lg:text-[110px] leading-[100%] font-bold'>IT Services <br className='hidden lg:block'/> That <br className='lg:hidden'/> Elevates</h1>
-          <p className='text-[18px] mt-[10px] leading-[110%] text-[rgba(255,255,255,0.6)] font-light '>At OTB, we offer a unique and meticulous approach to web and app development, graphic design, custom solutions, software development and video editing</p>
+          <p className='font-inter lg:text-[22px] mt-[10px] leading-[110%] text-[rgba(255,255,255,0.6)] font-[400] '>At OTB, we offer a unique and meticulous approach to web and app development, graphic design, custom solutions, software development and video editing</p>
         </div>
         <Image src='/hero_blur_right.svg' width={800} height={800} alt='background' className='absolute z-0 -bottom-1 right-0'/>
         <Image src='/hero_blur_left.svg' width={800} height={800} alt='background' className='absolute z-0 top-0 left-0'/>
