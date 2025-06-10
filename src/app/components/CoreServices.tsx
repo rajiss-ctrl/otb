@@ -10,7 +10,7 @@ const CoreServices = () => {
         <h1 className='font-bricolage text-[24px] lg:text-[60px] font-[700] lg:w-1/2 leading-[100%] mb-4  lg;mb-0  lg:pr-8'>
           {coreServicesTexts.heading.split(" ").map((word, idx) => (
             <React.Fragment key={idx}>
-              {word === "We" ? <><br className='lg:hidden' />{word}</> : ` ${word}`}
+              {word === "We" ? <><br className='lg:hidden' />{} {word}</> : `  ${word}`}
             </React.Fragment>
           ))}
         </h1>
