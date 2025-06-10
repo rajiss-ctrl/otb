@@ -156,7 +156,7 @@ const ContactUs = () => {
             {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message.message}</p>}
           </div>
           <div className="flex justify-center items-center">
-            <button type="submit" className="primary-btn shadow-2xl py-2 px-8 rounded-[40px] text-center">
+            <button type="submit" className="primary-btn cursor-pointer shadow-2xl border-[1px] border-[rgba(3,16,247,1)] py-2 px-8 rounded-[40px] text-center">
               Submit
             </button>
           </div>
