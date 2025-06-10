@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import React, { useEffect, useRef } from 'react' // ✅ Add useRef
+import React, { useEffect, useRef } from 'react'
 import Navbar from './Navbar'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useMenu } from '../context/MenuContext'
@@ -12,10 +12,14 @@ const DesktopMenu = () => {
   const pathname = usePathname()
   const menuRef = useRef<HTMLDivElement>(null) 
 
-
   const handleLogoClick = () => {
     if (open) setOpen(false)
   }
+
+  // Close menu when route changes
+  useEffect(() => {
+    setOpen(false)
+  }, [pathname, setOpen])
 
   useEffect(() => {
     if (open) {
@@ -24,6 +28,24 @@ const DesktopMenu = () => {
       document.body.style.overflow = 'auto'
     }
   }, [open])
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setOpen(false)
+      }
+    }
+
+    if (open) {
+      document.addEventListener('mousedown', handleClickOutside)
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [open, setOpen])
 
   // ✅ Close menu when clicking outside
   useEffect(() => {
@@ -76,14 +98,14 @@ const DesktopMenu = () => {
     <AnimatePresence>
       {open && (
         <motion.nav
-          ref={menuRef} // ✅ Attach the ref here
+          ref={menuRef} 
           className="bg-[#000000] fixed h-screen  top-0 left-0 z-[60] lg:z-50 text-white px-4 lg:px-[100px] pb-[100px] w-full flex flex-col"
           initial="hidden"
           animate="visible"
           exit="exit"
           variants={menuVariants}
         >
-          {/* ... your existing JSX stays the same below */}
+          
 
           {/* Backgrounds */}
           <div className="hidden lg:block absolute inset-0 -z-10 overflow-hidden">
