@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
+import toast from 'react-hot-toast'
 import { useForm, SubmitHandler } from 'react-hook-form'
 
 interface FormData {
@@ -20,15 +21,43 @@ const ContactUs = () => {
     register,
     handleSubmit,
     formState: { errors },
+    watch,
+    setValue,
   } = useForm<FormData>()
 
-  const onSubmit: SubmitHandler<FormData> = (data) => {
-    console.log('Form data:', data)
+  const [disabledCheckboxes, setDisabledCheckboxes] = useState(false)
+  const contactReasons = watch('contactReasons')
+
+  const handleCheckboxChange = (name: keyof FormData['contactReasons']) => {
+    const currentValue = contactReasons?.[name] || false
+    const newValue = !currentValue
+    
+    // Reset all checkboxes first
+    setValue('contactReasons.webDesign', false)
+    setValue('contactReasons.collaboration', false)
+    setValue('contactReasons.mobileAppDesign', false)
+    setValue('contactReasons.others', false)
+    
+    // Set the clicked checkbox to its new value
+    setValue(`contactReasons.${name}`, newValue)
+    
+    // Enable/disable other checkboxes based on whether one is checked
+    setDisabledCheckboxes(newValue)
   }
 
+  const onSubmit: SubmitHandler<FormData> = (data) => {
+  try {
+    console.log('Form data:', data)
+    toast.success('Form submitted successfully!')
+  } catch (error) {
+    toast.error(`Something went wrong. Please try again. ${error}`)
+  }
+}
+
+
   return (
-        <section className='relative bg-[rgba(0,0,0,1)] lg:static px-4 py-8 lg:py-[118px] lg:px-[100px] text-white'>
-        <div className="relative z-50 flex flex-col lg:flex-row gap-8">
+    <section className='relative bg-[rgba(0,0,0,1)] lg:static px-4 py-8 lg:py-[118px] lg:px-[100px] text-white'>
+      <div className="relative z-50 flex flex-col lg:flex-row gap-8">
         <div className="lg:w-[45%] flex flex-col justify-between">
           <div className="">
             <h4 className='font-bricolage text-[24px] lg:text-[60px] font-[700] leading-[100%] mb-[7px] lg:mb-[21px]'>Contact us</h4>
@@ -74,7 +103,9 @@ const ContactUs = () => {
                   type="checkbox" 
                   id="webDesign"
                   className="appearance-none w-5 h-5 bg-[#333333] checked:bg-[#333333] border border-gray-500 rounded-sm checked:after:content-['✓'] checked:after:text-[#3a44ff] checked:after:text-sm checked:after:font-bold checked:after:flex checked:after:items-center checked:after:justify-center"
-                  {...register('contactReasons.webDesign')}
+                  checked={contactReasons?.webDesign || false}
+                  onChange={() => handleCheckboxChange('webDesign')}
+                  disabled={disabledCheckboxes && !contactReasons?.webDesign}
                 />
                 <label htmlFor="webDesign" className='font-inter font-[400] text-[12px] lg:text-[18px] leading-[100%]'>Web Design</label>
               </div>
@@ -83,7 +114,9 @@ const ContactUs = () => {
                   type="checkbox" 
                   id="collaboration"
                   className="appearance-none w-5 h-5 bg-[#333333] checked:bg-[#333333] border border-gray-500 rounded-sm checked:after:content-['✓'] checked:after:text-[#3a44ff] checked:after:text-sm checked:after:font-bold checked:after:flex checked:after:items-center checked:after:justify-center"
-                  {...register('contactReasons.collaboration')}
+                  checked={contactReasons?.collaboration || false}
+                  onChange={() => handleCheckboxChange('collaboration')}
+                  disabled={disabledCheckboxes && !contactReasons?.collaboration}
                 />
                 <label htmlFor="collaboration" className='font-inter font-[400] text-[12px] lg:text-[18px] leading-[100%]'>Collaboration</label>
               </div>
@@ -92,7 +125,9 @@ const ContactUs = () => {
                   type="checkbox" 
                   id="mobileAppDesign"
                   className="appearance-none w-5 h-5 bg-[#333333] checked:bg-[#333333] border border-gray-500 rounded-sm checked:after:content-['✓'] checked:after:text-[#3a44ff] checked:after:text-sm checked:after:font-bold checked:after:flex checked:after:items-center checked:after:justify-center"
-                  {...register('contactReasons.mobileAppDesign')}
+                  checked={contactReasons?.mobileAppDesign || false}
+                  onChange={() => handleCheckboxChange('mobileAppDesign')}
+                  disabled={disabledCheckboxes && !contactReasons?.mobileAppDesign}
                 />
                 <label htmlFor="mobileAppDesign" className='font-inter font-[400] text-[12px] lg:text-[18px] leading-[100%]'>Mobile App Design</label>
               </div>
@@ -101,7 +136,9 @@ const ContactUs = () => {
                   type="checkbox" 
                   id="others"
                   className="appearance-none w-5 h-5 bg-[#333333] checked:bg-[#333333] border border-gray-500 rounded-sm checked:after:content-['✓'] checked:after:text-[#3a44ff] checked:after:text-sm checked:after:font-bold checked:after:flex checked:after:items-center checked:after:justify-center"
-                  {...register('contactReasons.others')}
+                  checked={contactReasons?.others || false}
+                  onChange={() => handleCheckboxChange('others')}
+                  disabled={disabledCheckboxes && !contactReasons?.others}
                 />
                 <label htmlFor="others" className='font-inter font-[400] text-[12px] lg:text-[18px] leading-[100%]'>Others</label>
               </div>
