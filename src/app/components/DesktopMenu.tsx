@@ -163,7 +163,7 @@ const DesktopMenu = () => {
                     {/* <Image src={item.icon} width={20} height={20} alt={item.text.toLowerCase()} /> */}
                     <p className={`${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}>{item.icon}</p>
                     <motion.span 
-                    className={`${item.className} text-[24px] lg:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}
+                    className={`${item.className} font-bricolage text-[24px] lg:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}
                     onClick={item.onClick}
                     >
                     {item.text}
@@ -188,7 +188,7 @@ const DesktopMenu = () => {
                     {/* <Image src={item.icon} width={20} height={20} alt={item.text.toLowerCase()} /> */}
                     <p className={`${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}>{item.icon}</p>
                     <motion.span 
-                    className={`${item.className} text-[24px] lg:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}
+                    className={`${item.className} font-bricolage text-[24px] lg:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}
                     onClick={item.onClick}
                     >
                     {item.text}
@@ -201,7 +201,7 @@ const DesktopMenu = () => {
 
             {/* Social for mobile */}
             <motion.div
-              className="flex lg:hidden leading-[40.17px] flex-col w-[247px] mb-[32px] gap-[20px] rounded-[12px] border border-[#262626] pl-[24px] pr-[4px] py-[14px]"
+              className="font-inter flex lg:hidden leading-[40.17px] flex-col w-[247px] mb-[32px] gap-[20px] rounded-[12px] border border-[#262626] pl-[24px] pr-[4px] py-[14px]"
               variants={itemVariants}
               transition={transition}
             >
@@ -241,7 +241,7 @@ const DesktopMenu = () => {
             </motion.div>
 
             {/* Third Column */}
-            <motion.ul className="space-y-[18px] lg:space-y-[18px]">
+            <motion.ul className="font-bricolage space-y-[18px] lg:space-y-[18px]">
               {[
                 { text: "Get in touch", className: "lg:ml-24 text-[22px] leading-[100%] text-[#FFFFFFB2]" },
                 { 
@@ -251,16 +251,16 @@ const DesktopMenu = () => {
                       <span className='leading-[100%]'>hello@otbsolutions.co.uk</span>
                     </>
                   ),
-                  className: "w-[247px] lg:w-auto border-b pb-2 border-[#262626] lg:ml-24 flex gap-1 items-center text-[18px] text-[#FDFDFD]"
+                  className: "font-bricolage w-[247px] lg:w-auto border-b pb-2 border-[#262626] lg:ml-24 flex gap-1 items-center text-[18px] text-[#FDFDFD]"
                 },
                 { 
                   content: (
                     <>
                       <Image src="/phone.svg" width={20} height={20} alt="phone" />
-                      <span className='leading-[100%]'>+44 7944 704724</span>
+                      <span className='font-inter leading-[100%]'>+44 7944 704724</span>
                     </>
                   ),
-                  className: "w-[247px] lg:w-auto border-b pb-2 border-[#262626] lg:ml-24 flex gap-1 items-center text-[18px] text-[#FDFDFD]"
+                  className: "font-inter w-[247px] lg:w-auto border-b pb-2 border-[#262626] lg:ml-24 flex gap-1 items-center text-[18px] text-[#FDFDFD]"
                 }
               ].map((item, index) => (
                 <motion.li 
@@ -275,7 +275,7 @@ const DesktopMenu = () => {
 
               {/* Social for desktop */}
               <motion.div
-                className="hidden leading-[40.17px] lg:flex flex-col lg:flex-row items-center gap-[20px] rounded-[12px] border border-[#262626] pl-[24px] pr-[4px] py-[14px]"
+                className="font-inter hidden leading-[40.17px] lg:flex flex-col lg:flex-row items-center gap-[20px] rounded-[12px] border border-[#262626] pl-[24px] pr-[4px] py-[14px]"
                 variants={itemVariants}
                 transition={transition}
               >
