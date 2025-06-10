@@ -20,7 +20,7 @@ const Navbar = () => {
   const renderToggleButton = (isDesktop: boolean) => (
     <div
       onClick={handleToggle}
-      className={`cursor-pointer w-[50px] h-[50px] rounded-full bg-[rgba(255,255,255,0.1)] ${
+      className={`cursor-pointer w-[40px] h-[40px] rounded-full bg-[rgba(255,255,255,0.1)] ${
         isDesktop ? 'hidden lg:flex' : 'lg:hidden flex'
       } flex-col gap-3 justify-center items-center`}
     >
@@ -73,26 +73,26 @@ const Navbar = () => {
   )
 
   return (
-    <nav className="z-50 w-full flex justify-between rounded-[10px] items-center bg-[rgb(255,255,255,0.06)] px-2 py-3 lg:h-[90px] lg:px-6">
+    <nav className="z-50 w-full flex justify-between rounded-[8px] lg:rounded-[10px] items-center bg-[rgb(255,255,255,0.06)] h-[60px] lg:h-[90px] pr-3 lg:px-6">
       <Link href="/" className="relative z-50" onClick={handleLogoClick}>
         <Image
-          src="/otb_over_the_board_logo.svg"
-          width={300}
-          height={300}
+          src="/Over the Board Logo1.svg"
+          width={200}
+          height={200}
           alt="OTB"
-          className="hidden shadow opacity-100 -ml-14 lg:block cursor-pointer z-50"
+          className="hidden shadow opacity-100 lg:block cursor-pointer -ml-10 z-50"
         />
         <Image
-          src="/otb_logo.svg"
-          width={100}
-          height={100}
+          src="/Over the Board Logo1.svg"
+          width={180}
+          height={180}
           alt="OTB"
-          className="lg:hidden opacity-100 cursor-pointer z-50"
+          className="lg:hidden -ml-6 lg:-ml-0 opacity-100 cursor-pointer z-50"
         />
       </Link>
 
       <div className="flex items-center gap-2 lg:gap-[33px]">
-        <button className="primary-btn cursor-pointer text-[18px] font-[500] leading-100%[] text-center rounded-[20px] lg:rounded-[40px] h-[40px] lg:h-[50px] px-4 lg:w-[166px]">
+        <button className="primary-btn cursor-pointer border-[1px] border-[rgba(3,16,247,1)] text-[14px] lg:text-[18px] font-[500] leading-[100%] text-center rounded-[20px] lg:rounded-[40px] lg:h-[50px] py-3 px-4 lg:w-[166px]">
           Get in touch
         </button>
 

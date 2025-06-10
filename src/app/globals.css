@@ -1,34 +1,22 @@
 @import "tailwindcss";
 
 
-:root {
-  --font-inter: 'Inter', sans-serif;
-  --font-bricolage: 'Bricolage Grotesque', sans-serif;
-}
+/* You can add custom styles here if needed */
 
-/* Apply fonts */
-body {
-  --custom-gradient: linear-gradient(to right, rgba(3, 0, 131, 1), rgba(1, 0, 59, 1));
-  font-family: var(--font-inter), sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
+/* For elements that should use Bricolage */
+.font-bricolage {
   font-family: var(--font-bricolage), sans-serif;
 }
 
-p, 
-span,
-li,
-button,
-a,
-Link,
-.light_blue_floating,
-.blue_floating,
-.green_floating,
-.orange_floating,
-.pink_floating {
+.font-inter{
   font-family: var(--font-inter), sans-serif;
 }
+
+/* This will be inherited by most text elements */
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
 .primary-btn {
   background: var(--custom-gradient);
   color: white;
@@ -79,9 +67,9 @@ Link,
 }
 @keyframes shake {
   0%, 100% { transform: translateY(-50%) rotate(-360.14deg); }
-  25% { transform: translateY(-50%) rotate(-363.24deg); }
-  50% { transform: translateY(-50%) rotate(-362.24deg); }
-  75% { transform: translateY(-50%) rotate(-363.24deg); }
+  35% { transform: translateY(-50%) rotate(-363.24deg); }
+  75% { transform: translateY(-50%) rotate(-362.24deg); }
+  95% { transform: translateY(-50%) rotate(-363.24deg); }
 }
 
 .light_blue_floating::after {
@@ -129,7 +117,7 @@ Link,
 
 .blue_floating {
   
-  animation: slowBounce 3s ease-in-out infinite;
+  animation: slowBounce 6s ease-in-out infinite;
 }
 
 .green_floating::before {
@@ -159,7 +147,7 @@ Link,
 
 .green_floating {
   
-  animation: slowBounce 3s ease-in-out infinite;
+  animation: slowBounce 8s ease-in-out infinite;
 }
 
 
@@ -182,14 +170,14 @@ Link,
   0%, 100% {
     transform: translateY(0);
   }
-  50% {
+  30% {
     transform: translateY(-10px);
   }
 }
 
 .pink_floating {
   
-  animation: slowBounce 3s ease-in-out infinite;
+  animation: slowBounce 8s ease-in-out infinite;
 }
 
 .orange_floating::before {
