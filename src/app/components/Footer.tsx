@@ -22,17 +22,17 @@ const Footer = () => {
             <ul className='flex flex-col lg:flex-row lg:justify-between items-center lg:w-[398px] gap-[8px] border border-[#262626] rounded-[12px] mb-[50px] lg:mb-0 mt-[30px] lg:mt-0 py-4 px-6 lg:p-[14px]'>
                 <li className='font-inter lg:text-[18px] font-[400] leading-[100%]'><p>Let’s be social</p></li>
                 <div className="flex items-center gap-[14px] ">
-                    <li className='w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)] p-2'>
+                    <li className='group relative w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)] p-2 hover:bg-[linear-gradient(to_bottom,_#3b82f6,_#2E2E2E00)] transition-all duration-300'>
                         <Link href={'/'}>
                         <Image src='/facebook.svg' width={24} height={24} alt="otb"/>
                         </Link>
                     </li>
-                    <li className='w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)] p-2'>
+                    <li className='w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)] p-2 hover:bg-[linear-gradient(to_bottom,_#3b82f6,_#2E2E2E00)] transition-all duration-300'>
                         <Link href={'/'}>
                         <Image src='/twitter.svg' width={24} height={24} alt="otb"/>
                         </Link>
                     </li>
-                    <li className='w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)] p-2'>
+                    <li className='w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)] p-2 hover:bg-[linear-gradient(to_bottom,_#3b82f6,_#2E2E2E00)] transition-all duration-300'>
                         <Link href={'/'}>
                         <Image src='/linkedin.svg' width={24} height={24} alt="otb"/>
                         </Link>
