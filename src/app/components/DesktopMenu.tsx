@@ -99,7 +99,7 @@ const DesktopMenu = () => {
       {open && (
         <motion.nav
           ref={menuRef} 
-          className="bg-[#000000] fixed h-screen  top-0 left-0 z-[60] lg:z-50 text-white px-4 lg:px-[80px] xl:px-[100px] pb-[100px] w-full flex flex-col overflow-y-scroll"
+          className="bg-[#000000] fixed h-screen  top-0 left-0 z-[60] lg:z-50 text-white px-4 lg:px-[80px] xl:px-[100px] lg:pb-[100px] w-full flex flex-col overflow-y-scroll"
           initial="hidden"
           animate="visible"
           exit="exit"
@@ -127,12 +127,12 @@ const DesktopMenu = () => {
             />
           </div>
 
-          <div className="mt-8">
+          <div className="mt-2 lg:mt-8">
             <Navbar />
           </div>
 
           <motion.div
-            className="flex flex-col lg:flex-row justify-start lg:justify-between w-full lg:flex-grow lg:items-end mt-[44px] lg:mt-0 pb-[53px] lg:pb-0 relative z-50 px-4 lg:px-6 "
+            className="flex flex-col lg:flex-row justify-start lg:justify-between w-full lg:flex-grow lg:items-end mt-[44px] lg:mt-0 pb-[30px] lg:pb-0 relative z-50 px-4 lg:px-6 "
             initial="hidden"
             animate="visible"
             variants={{

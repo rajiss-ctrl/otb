@@ -47,8 +47,8 @@ const ContactUs = () => {
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
   try {
-    console.log('Form data:', data)
-    toast.success('Form submitted successfully!')
+    // console.log('Form data:', data)
+    toast.success(`Form submitted successfully! ${data.fullName}`)
   } catch (error) {
     toast.error(`Something went wrong. Please try again. ${error}`)
   }
