@@ -80,7 +80,7 @@ const Navbar = () => {
           width={280}
           height={280}
           alt="OTB"
-          className="hidden shadow opacity-100 lg:block cursor-pointer -ml-16 z-50"
+          className="hidden shadow opacity-100 lg:block cursor-pointer -ml-20 z-50"
         />
         <Image
           src="/Over the Board Logo2.svg"
