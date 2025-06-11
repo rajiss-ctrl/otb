@@ -40,15 +40,15 @@ const OurProjects = () => {
             alt="" 
             className='z-0 hidden lg:block absolute top-32 right-[60px] opacity-0 animate-[fadeInOut_6s_ease-in-out_infinite]'
             />
-        <div className="mt-[69px] w-full text-white px-4 lg:px-[100px]">
-            <div className="w-full border-t-[1px] border-b-[1px] border-[rgba(38,38,38,1)]">
+        <div className="mt-[69px] w-full text-white px-4 lg:px-[80px] xl:px-[100px]">
+            <div className="w-full border-t border-b border-[rgba(38,38,38,1)]">
                 <div className="flex flex-col lg:flex-row justify-between">
-                    <p className='hidden lg:block font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
-                    <p className='font-bricolage border-b-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                    <p className='hidden lg:block font-bricolage border-b lg:border-r border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                    <p className='font-bricolage border-b border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
                 </div>
                 <div className="flex items-center flex-col lg:flex-row">
-                    <div className="lg:border-r-[1px] border-b-[1px] border-[rgba(38,38,38,1)] ">
-                        <div className='px-4 lg:px-[58px]'>
+                    <div className="lg:border-r border-[rgba(38,38,38,1)] ">
+                        <div className='px-4 lg:px-[50px]'>
                             <div className="mt-4">
                                 <Image src='/project_img.svg' width={1000} height={1000} alt="" className='hidden lg:block'/>
                                 <Image src='/project_img.svg' width={800} height={800} alt="" className='lg:hidden'/>
@@ -71,10 +71,10 @@ const OurProjects = () => {
                             <p className='font-bricolage text-[rgba(152,152,154,1)] lg:text-[18px] font-[500] leading-[100%] mb-[50px]'>We designed a clean, intuitive platform for Eagle AI — a smart finance tool that helps users make better money moves. From seamless dashboards to smooth data flows, we made sure every part of the experience felt effortless. The result? A product that looks sharp, works fast, and actually makes finance feel less like a headache.</p>
                         </div>
                     </div>
-                    <div className="border-b-[1px] border-[rgba(38,38,38,1)] ">
-                    <p className='lg:hidden font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                    <div className="">
+                    <p className='lg:hidden font-bricolage border-b lg:border-r border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
 
-                        <div className='px-4 lg:px-[58px]'>
+                        <div className='px-4 lg:px-[50px]'>
                             <div className="mt-4">
                                 <Image src='/project_img.svg' width={1000} height={1000} alt=""/>
                             </div>
@@ -101,12 +101,12 @@ const OurProjects = () => {
             </div>
             <div className="w-full">
                 <div className="flex flex-col lg:flex-row justify-between">
-                    <p className='hidden lg:block font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
-                    <p className='font-bricolage border-b-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                    <p className='hidden lg:block font-bricolage border-b lg:border-r border-[rgba(38,38,38,1)] lg:w-[50%] px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                    <p className='font-bricolage border-b border-[rgba(38,38,38,1)] lg:w-[50%] px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center">
-                    <div className="lg:border-r-[1px] border-[rgba(38,38,38,1)] ">
-                        <div className='px-4 lg:px-[58px]'>
+                    <div className="lg:border-r border-[rgba(38,38,38,1)] ">
+                        <div className='px-4 lg:px-[50px]'>
                             <div className="mt-4">
                                 <Image src='/project_img.svg' width={1000} height={1000} alt="" className='hidden lg:block'/>
                                 <Image src='/project_img.svg' width={800} height={800} alt="" className='lg:hidden'/>
@@ -125,14 +125,14 @@ const OurProjects = () => {
                                         Visit the site
                                     </div>
                                 </div>
-                                {/* <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/> */}
+                               
                             </div>
                             <p className='font-bricolage text-[rgba(152,152,154,1)] lg:text-[18px] font-[500] leading-[100%] mb-[50px]'>We designed a clean, intuitive platform for Eagle AI — a smart finance tool that helps users make better money moves. From seamless dashboards to smooth data flows, we made sure every part of the experience felt effortless. The result? A product that looks sharp, works fast, and actually makes finance feel less like a headache.</p>
                         </div>
                     </div>
                     <div className=" ">
-                    <p className='lg:hidden font-bricolage border-b border-t lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
-                        <div className='px-4 lg:px-[58px]'>
+                    <p className='lg:hidden font-bricolage border-b border-t lg:border-r border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                        <div className='px-4 lg:px-[50px]'>
 
                             <div className="mt-4">
                                 <Image src='/project_img.svg' width={1000} height={1000} alt=""/>

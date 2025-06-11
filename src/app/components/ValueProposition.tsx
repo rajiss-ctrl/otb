@@ -3,7 +3,7 @@ import React from 'react'
 
 const ValueProposition = () => {
   return (
-    <section className='bg-[#060606] flex flex-col justify-center items-center pb-[102px] px-[16px] text-white lg:px-[100px]'>
+    <section className='bg-[#060606] flex flex-col justify-center items-center pb-[102px] px-[16px] text-white lg:px-[80px] xl:px-[100px]'>
         <h1 className='font-bricolage my-[80px] text-[32px] lg:text-[60px] leading-[100%] font-bold'>Why Choose Us?</h1>
         <div className="">
             <div className="flex flex-col lg:flex-row items-center border-t lg:border-b border-gray-900">

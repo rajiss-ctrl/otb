@@ -99,7 +99,7 @@ const DesktopMenu = () => {
       {open && (
         <motion.nav
           ref={menuRef} 
-          className="bg-[#000000] fixed h-screen  top-0 left-0 z-[60] lg:z-50 text-white px-4 lg:px-[100px] pb-[100px] w-full flex flex-col"
+          className="bg-[#000000] fixed h-screen  top-0 left-0 z-[60] lg:z-50 text-white px-4 lg:px-[80px] xl:px-[100px] pb-[100px] w-full flex flex-col overflow-y-scroll"
           initial="hidden"
           animate="visible"
           exit="exit"
@@ -132,7 +132,7 @@ const DesktopMenu = () => {
           </div>
 
           <motion.div
-            className="flex flex-col lg:flex-row justify-start lg:justify-between w-full lg:flex-grow lg:items-end mt-[44px] lg:mt-0 pb-[53px] lg:pb-0 relative z-50 px-4 lg:px-6"
+            className="flex flex-col lg:flex-row justify-start lg:justify-between w-full lg:flex-grow lg:items-end mt-[44px] lg:mt-0 pb-[53px] lg:pb-0 relative z-50 px-4 lg:px-6 "
             initial="hidden"
             animate="visible"
             variants={{
@@ -158,12 +158,12 @@ const DesktopMenu = () => {
                   key={index}
                   variants={itemVariants}
                   transition={transition}
-                  className="group relative" // Add relative here to contain absolute positioned arrow
+                  className="group relative" 
                 >
                   <Link href={item.href} className="flex items-end gap-4 w-full">
                     <p className={`${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}>{item.icon}</p>
                     <motion.span 
-                      className={`${item.className} font-bricolage text-[24px] lg:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'} relative`} // Remove group-hover:pr-8
+                      className={`${item.className} font-bricolage text-[24px] lg:text-[50px] xl:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'} relative`} // Remove group-hover:pr-8
                       onClick={item.onClick}
                     >
                       {item.text}
@@ -226,7 +226,7 @@ const DesktopMenu = () => {
                     <Link href={item.href} className="flex items-end gap-4 w-full">
                       <p className={`${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}>{item.icon}</p>
                       <motion.span 
-                        className={`${item.className} font-bricolage text-[24px] lg:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'} relative`}
+                        className={`${item.className} font-bricolage text-[24px] lg:text-[50px] xl:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'} relative`}
                         onClick={item.onClick}
                       >
                         {item.text}
@@ -372,7 +372,7 @@ const DesktopMenu = () => {
 
               {/* Social for desktop */}
               <motion.div
-                className="font-inter hidden leading-[40.17px] lg:flex flex-col lg:flex-row items-center gap-[20px] rounded-[12px] border border-[#262626] pl-[24px] pr-[4px] py-[14px]"
+                className="font-inter hidden lg:w-[290px] xl:w-auto lg:ml-12 xl:ml-0 leading-[40.17px] lg:flex flex-col lg:flex-row items-center gap-[8px] xl:gap-[20px] rounded-[12px] border border-[#262626] pl-[10px] xl:pl-[24px] pr-[2px] xl:pr-[4px] py-[14px]"
                 variants={itemVariants}
                 transition={transition}
               >
@@ -380,7 +380,7 @@ const DesktopMenu = () => {
                   Let&apos;s be social
                 </motion.span>
                 <motion.div 
-                  className="lg:flex lg:items-center gap-[20px]"
+                  className="lg:flex lg:items-center gap-[10px] xl:gap-[20px]"
                   initial="hidden"
                   animate="visible"
                   variants={{

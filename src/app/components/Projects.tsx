@@ -8,7 +8,7 @@ const Projects = () => {
         <Image src='/blur_circle_bg.svg' width={1000} height={1000} alt='project' className='absolute  -top-52 left-0 z-10'/>
         <div className='bg-[#262626] flex flex-col lg:flex-row items-center rounded-[4.69px] lg:rounded-[20px] pb-[30px] lg:pb-0 relative '>
 
-            <div className="py-6 lg:py-[71px] px-4 lg:px-[100px] lg:border-r border-[#666666]">
+            <div className="py-6 lg:py-[71px] px-4 lg:px-[80px] xl:px-[100px] lg:border-r border-[#666666]">
                 <Image src='/project_img.svg' width={2000} height={2000} alt='project' className='hidden lg:block'/>
                 <Image src='/project_img.svg' width={600} height={600} alt='project' className='lg:hidden'/>
             </div>
