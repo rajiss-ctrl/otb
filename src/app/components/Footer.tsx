@@ -8,8 +8,8 @@ const Footer = () => {
             <Image src='/otb_footer_bg.png' width={1000} height={1000} alt="otb" className='absolute z-30 bottom-6 lg:-bottom-2 right-1/2 translate-y-1/2 translate-x-1/2'/>
         <div className="flex flex-col lg:flex-row justify-between items-center py-3 border-b  border-[#262626]">
             <Link href={'/'}>
-                <Image src='/Over the Board Logo1.svg' width={300} height={300} alt="otb" className='-ml-14 hidden lg:block'/>
-                <Image src='/Over the Board Logo1.svg' width={400} height={400} alt="otb" className='lg:hidden'/>
+                <Image src='/Over the Board Logo2.svg' width={300} height={300} alt="otb" className='-ml-16 hidden lg:block'/>
+                <Image src='/Over the Board Logo2.svg' width={400} height={400} alt="otb" className='lg:hidden'/>
             </Link>
             <div className="flex flex-col lg:flex-row items-center -mt-8 lg:-mt-0 lg:gap-[96px]">
             <ul className='flex flex-col gap-4 lg:gap-[30px] text-[18px] font-[400] leading-[100%]  lg:flex-row items-center'>

@@ -76,18 +76,18 @@ const Navbar = () => {
     <nav className="z-50 w-full flex justify-between rounded-[8px] lg:rounded-[10px] items-center bg-[rgb(255,255,255,0.06)] h-[60px] lg:h-[90px] pr-3 lg:px-6">
       <Link href="/" className="relative z-50" onClick={handleLogoClick}>
         <Image
-          src="/Over the Board Logo1.svg"
-          width={200}
-          height={200}
+          src="/Over the Board Logo2.svg"
+          width={280}
+          height={280}
           alt="OTB"
-          className="hidden shadow opacity-100 lg:block cursor-pointer -ml-10 z-50"
+          className="hidden shadow opacity-100 lg:block cursor-pointer -ml-16 z-50"
         />
         <Image
-          src="/Over the Board Logo1.svg"
+          src="/Over the Board Logo2.svg"
           width={180}
           height={180}
           alt="OTB"
-          className="lg:hidden -ml-6 lg:-ml-0 opacity-100 cursor-pointer z-50"
+          className="lg:hidden -ml-9 lg:-ml-0 opacity-100 cursor-pointer z-50"
         />
       </Link>
 
