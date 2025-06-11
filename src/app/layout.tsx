@@ -36,9 +36,9 @@ export default function RootLayout({
       className={`${inter.variable} ${bricolage.variable} scroll-smooth`}
       suppressHydrationWarning
     >
-      <body className="antialiased bg-neutral-950 font-[var(--font-inter)]">
+      <body className="antialiased bg-neutral-950 font-[var(--font-inter)] scrollbar-gradient">
         <MenuProvider>
-          <main className="min-h-[calc(100dvh)]">
+          <main className="min-h-[calc(100dvh)] overflow-hidden">
             {children}
             <Toaster position="top-right" reverseOrder={false} />
           </main>

@@ -19,7 +19,31 @@
 body {
   font-family: var(--font-inter), sans-serif;
 }
+/* Scrollbar Styling */
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
+::-webkit-scrollbar-track {
+  background: #262626; /* rgba(38, 38, 38, 1) */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #030083 0%, #01003B 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #030083CC 0%, #01003BCC 100%); /* 80% opacity */
+}
+
+/* Firefox Support */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #030083 #262626; /* Fallback for Firefox */
+}
 .primary-btn {
   background: var(--custom-gradient);
   color: white;

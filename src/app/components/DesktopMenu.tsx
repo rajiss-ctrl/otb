@@ -149,54 +149,129 @@ const DesktopMenu = () => {
           >
             {/* First Column */}
             <motion.ul className="space-y-[40px]">
-            {[
+              {[
                 { href: "/", icon: "/01", text: "Home", className: "home-num" },
                 { href: "/services", icon: "/02", text: "Services", className: "serv-num" },
                 { href: "/projects", icon: "/03", text: "Projects", className: "pro-num", onClick: handleLogoClick }
-            ].map((item, index) => (
+              ].map((item, index) => (
                 <motion.li 
-                key={index}
-                variants={itemVariants}
-                transition={transition}
+                  key={index}
+                  variants={itemVariants}
+                  transition={transition}
+                  className="group relative" // Add relative here to contain absolute positioned arrow
                 >
-                <Link href={item.href} className="flex items-end gap-4">
-                    {/* <Image src={item.icon} width={20} height={20} alt={item.text.toLowerCase()} /> */}
+                  <Link href={item.href} className="flex items-end gap-4 w-full">
                     <p className={`${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}>{item.icon}</p>
                     <motion.span 
-                    className={`${item.className} font-bricolage text-[24px] lg:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}
-                    onClick={item.onClick}
+                      className={`${item.className} font-bricolage text-[24px] lg:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'} relative`} // Remove group-hover:pr-8
+                      onClick={item.onClick}
                     >
-                    {item.text}
+                      {item.text}
+                      {/* Animated arrow - now positioned relative to the text span */}
+                      <motion.div
+                        className="absolute -right-6 bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        initial={{ x: -10 }}
+                        animate={{
+                          x: [0, 5, 0],
+                          transition: {
+                            repeat: Infinity,
+                            duration: 1.5,
+                            ease: "easeInOut"
+                          }
+                        }}
+                      >
+                        <motion.svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="text-blue-500 filter drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                          animate={{
+                            scale: [1, 1.2, 1],
+                            transition: {
+                              repeat: Infinity,
+                              duration: 1.5,
+                              ease: "easeInOut"
+                            }
+                          }}
+                        >
+                          <path
+                            d="M5 12H19M19 12L12 5M19 12L12 19"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </motion.svg>
+                      </motion.div>
                     </motion.span>
-                </Link>
+                  </Link>
                 </motion.li>
-            ))}
+              ))}
             </motion.ul>
 
             {/* Second Column */}
             <motion.ul className="space-y-[40px] my-[30px] lg:my-0">
-            {[
-                { href: "/about", icon: "/04", text: "About", className: "home-num", onClick: handleLogoClick },
-                { href: "/contact", icon: "/05", text: "Contact", className: "serv-num" }
-            ].map((item, index) => (
-                <motion.li 
-                key={index}
-                variants={itemVariants}
-                transition={transition}
-                >
-                <Link href={item.href} className="flex items-end gap-4">
-                    {/* <Image src={item.icon} width={20} height={20} alt={item.text.toLowerCase()} /> */}
-                    <p className={`${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}>{item.icon}</p>
-                    <motion.span 
-                    className={`${item.className} font-bricolage text-[24px] lg:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}
-                    onClick={item.onClick}
-                    >
-                    {item.text}
-                    </motion.span>
-                </Link>
-                </motion.li>
-            ))}
-            </motion.ul>
+                {[
+                  { href: "/about", icon: "/04", text: "About", className: "home-num", onClick: handleLogoClick },
+                  { href: "/#contact", icon: "/05", text: "Contact", className: "serv-num" }
+                ].map((item, index) => (
+                  <motion.li 
+                    key={index}
+                    variants={itemVariants}
+                    transition={transition}
+                    className="group relative"
+                  >
+                    <Link href={item.href} className="flex items-end gap-4 w-full">
+                      <p className={`${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'}`}>{item.icon}</p>
+                      <motion.span 
+                        className={`${item.className} font-bricolage text-[24px] lg:text-[70px] font-[400] lg:font-[700] leading-[100%] ${pathname === item.href ? 'text-blue-500 font-bold' : 'text-white'} relative`}
+                        onClick={item.onClick}
+                      >
+                        {item.text}
+                        <motion.div
+                          className="absolute -right-6 bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                          initial={{ x: -10 }}
+                          animate={{
+                            x: [0, 5, 0],
+                            transition: {
+                              repeat: Infinity,
+                              duration: 1.5,
+                              ease: "easeInOut"
+                            }
+                          }}
+                        >
+                          <motion.svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="text-blue-500 filter drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                            animate={{
+                              scale: [1, 1.2, 1],
+                              transition: {
+                                repeat: Infinity,
+                                duration: 1.5,
+                                ease: "easeInOut"
+                              }
+                            }}
+                          >
+                            <path
+                              d="M5 12H19M19 12L12 5M19 12L12 19"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </motion.svg>
+                        </motion.div>
+                      </motion.span>
+                    </Link>
+                  </motion.li>
+                ))}
+              </motion.ul>
 
 
             {/* Social for mobile */}
@@ -223,18 +298,40 @@ const DesktopMenu = () => {
                 {['facebook', 'twitter', 'linkedin'].map((platform, i) => (
                   <motion.li
                     key={i}
-                    className="w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)] p-2"
+                    className="group relative w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)] p-2 hover:bg-[linear-gradient(to_bottom,_#3b82f6,_#2E2E2E00)] transition-all duration-300"
                     variants={itemVariants}
                     transition={transition}
+                    whileHover={{
+                      scale: 1.1,
+                      transition: { duration: 0.2 }
+                    }}
                   >
-                    <Link href="/">
+                    <Link href="/" className="relative z-10">
                       <Image
                         src={`/${platform}.svg`}
                         width={24}
                         height={24}
                         alt={platform}
+                        className="group-hover:brightness-200 transition-all duration-300"
                       />
                     </Link>
+                    
+                    {/* Glow effect */}
+                    <motion.div
+                      className="absolute inset-0 rounded-[10px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      style={{
+                        background: `radial-gradient(circle at center, rgba(59, 130, 246, 0.4) 0%, transparent 70%)`,
+                        boxShadow: '0 0 15px rgba(59, 130, 246, 0.5)'
+                      }}
+                      animate={{
+                        scale: [1, 1.2, 1],
+                        transition: {
+                          repeat: Infinity,
+                          duration: 2,
+                          ease: "easeInOut"
+                        }
+                      }}
+                    />
                   </motion.li>
                 ))}
               </motion.div>
@@ -251,7 +348,7 @@ const DesktopMenu = () => {
                       <span className='leading-[100%]'>hello@otbsolutions.co.uk</span>
                     </>
                   ),
-                  className: "font-bricolage w-[247px] lg:w-auto border-b pb-2 border-[#262626] lg:ml-24 flex gap-1 items-center text-[18px] text-[#FDFDFD]"
+                  className: "cursor-pointer font-bricolage w-[247px] lg:w-auto border-b pb-2 border-[#262626] lg:ml-24 flex gap-1 items-center text-[18px] text-[#FDFDFD]"
                 },
                 { 
                   content: (
@@ -260,7 +357,7 @@ const DesktopMenu = () => {
                       <span className='font-inter leading-[100%]'>+44 7944 704724</span>
                     </>
                   ),
-                  className: "font-inter w-[247px] lg:w-auto border-b pb-2 border-[#262626] lg:ml-24 flex gap-1 items-center text-[18px] text-[#FDFDFD]"
+                  className: "cursor-pointer font-inter w-[247px] lg:w-auto border-b pb-2 border-[#262626] lg:ml-24 flex gap-1 items-center text-[18px] text-[#FDFDFD]"
                 }
               ].map((item, index) => (
                 <motion.li 
@@ -297,18 +394,40 @@ const DesktopMenu = () => {
                   {['facebook', 'twitter', 'linkedin'].map((platform, i) => (
                     <motion.li
                       key={i}
-                      className="w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)] p-2"
+                      className="group relative w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[linear-gradient(to_bottom,_#242424,_#2E2E2E00)] p-2 hover:bg-[linear-gradient(to_bottom,_#3b82f6,_#2E2E2E00)] transition-all duration-300"
                       variants={itemVariants}
                       transition={transition}
+                      whileHover={{
+                        scale: 1.1,
+                        transition: { duration: 0.2 }
+                      }}
                     >
-                      <Link href="/">
+                      <Link href="/" className="relative z-10">
                         <Image
                           src={`/${platform}.svg`}
                           width={24}
                           height={24}
                           alt={platform}
+                          className="group-hover:brightness-200 transition-all duration-300"
                         />
                       </Link>
+                      
+                      {/* Glow effect */}
+                      <motion.div
+                        className="absolute inset-0 rounded-[10px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        style={{
+                          background: `radial-gradient(circle at center, rgba(59, 130, 246, 0.4) 0%, transparent 70%)`,
+                          boxShadow: '0 0 15px rgba(59, 130, 246, 0.5)'
+                        }}
+                        animate={{
+                          scale: [1, 1.2, 1],
+                          transition: {
+                            repeat: Infinity,
+                            duration: 2,
+                            ease: "easeInOut"
+                          }
+                        }}
+                      />
                     </motion.li>
                   ))}
                 </motion.div>

@@ -5,9 +5,9 @@ import React from 'react'
 const OurProjects = () => {
   return (
     <article className='relative z-50 flex justify-center items-center flex-col py-[84px] bg-[#000000]'>
-        <Link href='/projects' className='relative z-[60] primary-btn border-[1px] border-[rgba(3,16,247,1)] p-4 text-white lg:text-[26px] font-medium leading-[100%] rounded-[30px] mb-[60px]'>
+        <div className='relative z-[60] bg-black font-inter border  border-[rgba(3,16,247,1)] p-4 text-[rgba(255,255,255,1)] lg:text-[26px] font-medium leading-[100%] rounded-[30px] mb-[60px]'>
             Our Projects
-        </Link>
+        </div>
         <div className="flex flex-col justify-start px-[25%] lg:px-[35%]">
             <h2 className='font-bricolage text-white text-[24px] lg:text-[50px] leading-[100%] font-bold'>This Ain&#39;t Just <br/> Portfolio Sh*t</h2>
             <p className='font-inter lg:text-[22px] leading-[100%] font-[400] text-[rgba(255,255,255,0.66)]  mt-4'>We Built Some Wild Projects — real work, real late nights, real results. Scroll through and see some of what we&#39;re on.</p>    
@@ -55,7 +55,18 @@ const OurProjects = () => {
                             </div>
                             <div className="flex justify-between items-center my-[30px]">
                                 <h3 className='font-bricolage text-[24px] leading-[100%] font-[700]'>Eagle AI Website</h3>
-                                <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/>
+                              <div className="relative group cursor-pointer">
+                                    <Image 
+                                        src='/rotate_arrow.svg' 
+                                        width={15} 
+                                        height={15} 
+                                        alt="" 
+                                        className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'
+                                    />
+                                    <div className="font-bricolage absolute opacity-0 group-hover:opacity-100 left-full top-0 -translate-y-1/2 ml-2 bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] transform group-hover:translate-x-0 -translate-x-1">
+                                        Visit the site
+                                    </div>
+                                </div>
                             </div>
                             <p className='font-bricolage text-[rgba(152,152,154,1)] lg:text-[18px] font-[500] leading-[100%] mb-[50px]'>We designed a clean, intuitive platform for Eagle AI — a smart finance tool that helps users make better money moves. From seamless dashboards to smooth data flows, we made sure every part of the experience felt effortless. The result? A product that looks sharp, works fast, and actually makes finance feel less like a headache.</p>
                         </div>
@@ -67,7 +78,19 @@ const OurProjects = () => {
                             </div>
                             <div className="flex justify-between items-center my-[30px]">
                                 <h3 className='font-bricolage text-[24px] leading-[100%] font-[700]'>Eagle AI Website</h3>
-                                <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/>
+                                <div className="relative group cursor-pointer">
+                                    <Image 
+                                        src='/rotate_arrow.svg' 
+                                        width={15} 
+                                        height={15} 
+                                        alt="" 
+                                        className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'
+                                    />
+                                    <div className="font-bricolage absolute opacity-0 group-hover:opacity-100 left-full top-0 -translate-y-1/2 ml-2 bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] transform group-hover:translate-x-0 -translate-x-1">
+                                        Visit the site
+                                    </div>
+                                </div>
+                                {/* <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/> */}
                             </div>
                             <p className='font-bricolage text-[rgba(152,152,154,1)] lg:text-[18px] font-[500] leading-[100%] mb-[50px]'>We designed a clean, intuitive platform for Eagle AI — a smart finance tool that helps users make better money moves. From seamless dashboards to smooth data flows, we made sure every part of the experience felt effortless. The result? A product that looks sharp, works fast, and actually makes finance feel less like a headache.</p>
                         </div>
@@ -88,7 +111,19 @@ const OurProjects = () => {
                             </div>
                             <div className="flex justify-between items-center my-[30px]">
                                 <h3 className='font-bricolage text-[24px] leading-[100%] font-[700]'>Eagle AI Website</h3>
-                                <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/>
+                                <div className="relative group cursor-pointer">
+                                    <Image 
+                                        src='/rotate_arrow.svg' 
+                                        width={15} 
+                                        height={15} 
+                                        alt="" 
+                                        className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'
+                                    />
+                                    <div className="font-bricolage absolute opacity-0 group-hover:opacity-100 left-full top-0 -translate-y-1/2 ml-2 bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] transform group-hover:translate-x-0 -translate-x-1">
+                                        Visit the site
+                                    </div>
+                                </div>
+                                {/* <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/> */}
                             </div>
                             <p className='font-bricolage text-[rgba(152,152,154,1)] lg:text-[18px] font-[500] leading-[100%] mb-[50px]'>We designed a clean, intuitive platform for Eagle AI — a smart finance tool that helps users make better money moves. From seamless dashboards to smooth data flows, we made sure every part of the experience felt effortless. The result? A product that looks sharp, works fast, and actually makes finance feel less like a headache.</p>
                         </div>
@@ -100,7 +135,19 @@ const OurProjects = () => {
                             </div>
                             <div className="flex justify-between items-center my-[30px]">
                                 <h3 className='font-bricolage text-[24px] leading-[100%] font-[700]'>Eagle AI Website</h3>
-                                <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/>
+                                <div className="relative group cursor-pointer">
+                                    <Image 
+                                        src='/rotate_arrow.svg' 
+                                        width={15} 
+                                        height={15} 
+                                        alt="" 
+                                        className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'
+                                    />
+                                    <div className="font-bricolage absolute opacity-0 group-hover:opacity-100 left-full top-0 -translate-y-1/2 ml-2 bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] transform group-hover:translate-x-0 -translate-x-1">
+                                        Visit the site
+                                    </div>
+                                </div>
+                                {/* <Image src='/rotate_arrow.svg' width={15} height={15} alt="" className='bg-[rgba(38,38,38,1)] p-2 rounded-[8px] w-[30px] h-[30px]'/> */}
                             </div>
                             <p className='font-bricolage text-[rgba(152,152,154,1)] lg:text-[18px] font-[500] leading-[100%] mb-[50px]'>We designed a clean, intuitive platform for Eagle AI — a smart finance tool that helps users make better money moves. From seamless dashboards to smooth data flows, we made sure every part of the experience felt effortless. The result? A product that looks sharp, works fast, and actually makes finance feel less like a headache.</p>
                         </div>
@@ -108,7 +155,7 @@ const OurProjects = () => {
                 </div>
             </div>
         </div>
-        <Link href={'/projects'} className="relative z-50 primary-btn p-4 rounded-[30px] mt-[59px] text-[rgba(255,255,255,1)] text-[20px] font-light leading-[100%]">Explore more projects</Link>
+        <Link href={'/projects'} className="font-inter relative z-50 primary-btn p-4 rounded-[30px] mt-[59px] border  border-[rgba(3,16,247,1)] text-[rgba(255,255,255,1)] text-[20px] font-[400] leading-[100%]">Explore more projects</Link>
     </article>
   )
 }

@@ -4,17 +4,18 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='bg-[#000000] lg:pl-[120.12px]  lg:pr-[100px] border-t border-[#262626] text-white'>
-        <div className="flex flex-col lg:flex-row justify-between items-center py-8 border-b  border-[#262626]">
+    <footer className='bg-[#000000] relative lg:pl-[120.12px]  lg:pr-[100px] border-t border-[#262626] text-white'>
+            <Image src='/otb_footer_bg.png' width={1000} height={1000} alt="otb" className='absolute z-30 -bottom-2 right-1/2 translate-y-1/2 translate-x-1/2'/>
+        <div className="flex flex-col lg:flex-row justify-between items-center py-3 border-b  border-[#262626]">
             <Link href={'/'}>
-                <Image src='/Over the Board Logo1.svg' width={160} height={160} alt="otb" className='-ml-8 hidden lg:block'/>
+                <Image src='/Over the Board Logo1.svg' width={300} height={300} alt="otb" className='-ml-14 hidden lg:block'/>
                 <Image src='/Over the Board Logo1.svg' width={400} height={400} alt="otb" className='lg:hidden'/>
             </Link>
             <div className="flex flex-col lg:flex-row items-center -mt-8 lg:-mt-0 lg:gap-[96px]">
             <ul className='flex flex-col gap-[30px] text-[18px] font-[400] leading-[100%]  lg:flex-row items-center'>
                 <li className='font-inter lg:text-[18px] font-[400] mb-[11.5px] lg:mb-0'><Link href={'/'}>Home</Link></li>
                 <li className='font-inter lg:text-[18px] font-[400] mb-[11.5px] lg:mb-0'><Link href={'/'}>Services</Link></li>
-                <li className='font-inter lg:text-[18px] font-[400] mb-[11.5px] lg:mb-0'><Link href={'/'}>Projects</Link></li>
+                <li className='font-inter lg:text-[18px] font-[400] mb-[11.5px] lg:mb-0'><Link href={'/projects'}>Projects</Link></li>
                 <li className='font-inter lg:text-[18px] font-[400] mb-[11.5px] lg:mb-0'><Link href={'/'}>About</Link></li>
                 <li className='font-inter lg:text-[18px] font-[400] mb-[11.5px] lg:mb-0'><Link href={'/'}>Contact</Link></li>
             </ul>
@@ -41,7 +42,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="flex flex-col lg items-center pt-[38px] pb-[50px] lg:pb-[111px] ">
-            <div className="flex flex-col lg:flex-row gap-14 items-center">
+            <div className="w-full flex flex-col lg:flex-row justify-between items-center">
                 <div className="flex items-center gap-[4px]  border-b pb-2 lg:pb-1 border-[#262626]">
                     <Image src='/email.svg' width={20} height={24} alt="otb"className='p-[1px]'/>
                     <span className='font-inter text-[12px] font-[400] leading-[100%]'>hello@otbsolutions.co.uk</span>

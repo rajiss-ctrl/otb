@@ -56,7 +56,7 @@ const ContactUs = () => {
 
 
   return (
-    <section className='relative bg-[rgba(0,0,0,1)] lg:static px-4 py-8 lg:py-[118px] lg:px-[100px] text-white'>
+    <section id="contact" className='relative bg-[rgba(0,0,0,1)] lg:static px-4 py-8 lg:py-[118px] lg:px-[100px] text-white'>
       <div className="relative z-50 flex flex-col lg:flex-row gap-8">
         <div className="lg:w-[45%] flex flex-col justify-between">
           <div className="">
