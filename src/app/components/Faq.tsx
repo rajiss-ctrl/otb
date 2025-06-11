@@ -15,7 +15,7 @@ const Faq: React.FC = () => {
     <section className="relative py-24 lg:py-[100px] bg-[#61004B] rounded-t-[40px] lg:rounded-t-[100px] text-white px-4 lg:px-[250px]">
       {/* Decorative images remain the same */}
       <Image src="/faq_flower.svg" width={100} height={100} alt="flower" className="absolute hidden lg:block left-48 top-[20%]" />
-      <Image src="/faq_flower.svg" width={70} height={70} alt="flower" className="absolute lg:hidden -left-4  top-[18%]" />
+      <Image src="/faq_flower.svg" width={70} height={70} alt="flower" className="absolute lg:hidden -left-4  top-[24%]" />
       <Image src="/oval.svg" width={200} height={200} alt="oval otb" className="absolute hidden lg:block right-40 bottom-[2%]" />
       <Image src="/mobile_oval.svg" width={100} height={100} alt="oval otb" className="absolute lg:hidden -right-3 bottom-0" />
 

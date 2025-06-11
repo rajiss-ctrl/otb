@@ -25,7 +25,7 @@ import Image from 'next/image'
 
         <Image src='/svg.svg' width={800} height={800} alt='background' className='spin-globe absolute top-[120px] -right-[26rem] z-0 hidden lg:block '/>
         <Image src='/globe.svg' width={600} height={600} alt='background' className='spin-globe absolute top-[120px] -right-60 z-0 lg:hidden'/>
-        <div className="relative z-50">
+        <div className="relative mt-6 lg:mt-0 z-50">
           <Navbar/>
         </div>
         <div className="relative text-[rgba(255,255,255,1)] z-50 mt-[120px] lg:mt-[14%] lg:w-[900px]">

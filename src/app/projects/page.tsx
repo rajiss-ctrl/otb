@@ -16,12 +16,12 @@ const page = () => {
     <div className="relative">
       <DesktopMenu />
     <section className='text-white '>        
-    <Image src='/blur_circle_bg.svg' width={2000} height={2000} alt='project' className='absolute  -top-[10rem] -left-72 z-0'/>
+    <Image src='/blur_circle_bg.svg' width={2000} height={2000} alt='project' className='absolute top-5rem left-4 lg:-top-[10rem] lg:-left-72 z-10 lg:z-0'/>
       <div className={`px-4 lg:px-[100px] mt-6 lg:mt-[50px] relative  z-30`}>
         <Navbar/> 
       </div>
       <div className="px-4 lg:px-[100px]">
-        <div className="relative lg:h-[341px]  py-[20px] lg:py-[120px] px-[60px] lg:px-[300px] mt-[51px] mb-[100px] ">
+        <div className="relative h-[280px] lg:h-[341px] z-0  py-[20px] lg:py-[120px] px-[60px] lg:px-[300px] mt-[51px] mb-[100px] ">
           {/* Background image with color blend */}
           <div 
             className="absolute z-10 inset-0 bg-[url('/otb_over_the_board_bg.svg')] bg-cover bg-center"

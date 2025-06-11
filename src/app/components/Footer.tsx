@@ -5,14 +5,14 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className='bg-[#000000] relative lg:pl-[120.12px]  lg:pr-[100px] border-t border-[#262626] text-white'>
-            <Image src='/otb_footer_bg.png' width={1000} height={1000} alt="otb" className='absolute z-30 -bottom-2 right-1/2 translate-y-1/2 translate-x-1/2'/>
+            <Image src='/otb_footer_bg.png' width={1000} height={1000} alt="otb" className='absolute z-30 bottom-6 lg:-bottom-2 right-1/2 translate-y-1/2 translate-x-1/2'/>
         <div className="flex flex-col lg:flex-row justify-between items-center py-3 border-b  border-[#262626]">
             <Link href={'/'}>
                 <Image src='/Over the Board Logo1.svg' width={300} height={300} alt="otb" className='-ml-14 hidden lg:block'/>
                 <Image src='/Over the Board Logo1.svg' width={400} height={400} alt="otb" className='lg:hidden'/>
             </Link>
             <div className="flex flex-col lg:flex-row items-center -mt-8 lg:-mt-0 lg:gap-[96px]">
-            <ul className='flex flex-col gap-[30px] text-[18px] font-[400] leading-[100%]  lg:flex-row items-center'>
+            <ul className='flex flex-col gap-4 lg:gap-[30px] text-[18px] font-[400] leading-[100%]  lg:flex-row items-center'>
                 <li className='font-inter lg:text-[18px] font-[400] mb-[11.5px] lg:mb-0'><Link href={'/'}>Home</Link></li>
                 <li className='font-inter lg:text-[18px] font-[400] mb-[11.5px] lg:mb-0'><Link href={'/'}>Services</Link></li>
                 <li className='font-inter lg:text-[18px] font-[400] mb-[11.5px] lg:mb-0'><Link href={'/projects'}>Projects</Link></li>
@@ -58,7 +58,7 @@ const Footer = () => {
                     <Image src='/address.png' width={40} height={40} alt="otb" className='lg:hidden'/>
                     <span className='font-inter text-[12px] font-[400] leading-[100%]'>2nd Floor College House, 17 King Edwards Road, Ruislip, London, HA4 7AE</span>
                 </div>
-                <p className='font-bricolage text-[14px] text-[rgba(152,152,154,1)] font-[400] mt-[40px] lg:mt-0 leading-[100%]'>© 2025 OTB. All rights reserved.</p>
+                <p className='font-bricolage text-[14px] text-[rgba(152,152,154,1)] font-[400] my-[30px] lg:mt-0 leading-[100%]'>© 2025 OTB. All rights reserved.</p>
             </div>
         </div>
     </footer>

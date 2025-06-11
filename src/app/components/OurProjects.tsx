@@ -43,7 +43,7 @@ const OurProjects = () => {
         <div className="mt-[69px] w-full text-white px-4 lg:px-[100px]">
             <div className="w-full border-t-[1px] border-b-[1px] border-[rgba(38,38,38,1)]">
                 <div className="flex flex-col lg:flex-row justify-between">
-                    <p className='font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                    <p className='hidden lg:block font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
                     <p className='font-bricolage border-b-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
                 </div>
                 <div className="flex items-center flex-col lg:flex-row">
@@ -72,6 +72,8 @@ const OurProjects = () => {
                         </div>
                     </div>
                     <div className="border-b-[1px] border-[rgba(38,38,38,1)] ">
+                    <p className='lg:hidden font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+
                         <div className='px-4 lg:px-[58px]'>
                             <div className="mt-4">
                                 <Image src='/project_img.svg' width={1000} height={1000} alt=""/>
@@ -99,7 +101,7 @@ const OurProjects = () => {
             </div>
             <div className="w-full">
                 <div className="flex flex-col lg:flex-row justify-between">
-                    <p className='font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
+                    <p className='hidden lg:block font-bricolage border-b-[1px] lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
                     <p className='font-bricolage border-b-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center">
@@ -129,7 +131,9 @@ const OurProjects = () => {
                         </div>
                     </div>
                     <div className=" ">
+                    <p className='lg:hidden font-bricolage border-b border-t lg:border-r-[1px] border-[rgba(38,38,38,1)] lg:w-1/2 px-4 lg:px-[50px] py-[30px] text-[rgba(152,152,154,1)] text-start lg:text-[28px] font-[600] leading-[100%]'>A Finance Website</p>
                         <div className='px-4 lg:px-[58px]'>
+
                             <div className="mt-4">
                                 <Image src='/project_img.svg' width={1000} height={1000} alt=""/>
                             </div>
